@@ -1,0 +1,22 @@
+{
+    "data_negocios": [
+        {
+            "id": 1,
+            "categoria": "Comida",
+            "imagen_negocio": "https://res.cloudinary.com/dqpijrvsq/image/upload/v1707510722/condominios/ih6judbecgxpceb7ki2n.jpg",
+            "alt": "negocio_comida"
+        },
+        {
+            "id": 3,
+            "categoria": "Comida",
+            "imagen_negocio": "https://res.cloudinary.com/dqpijrvsq/image/upload/v1707511331/condominios/lmbuv20aoaswisty9s3d.jpg",
+            "alt": "negocio_comida"
+        },
+        {
+            "id": 3,
+            "categoria": "Gas",
+            "imagen_negocio": "https://res.cloudinary.com/dqpijrvsq/image/upload/v1716592510/condominios/dhcitxz6ofbnl3deuhxu.jpg",
+            "alt": "negocio_gas"
+        }
+    ]
+}
