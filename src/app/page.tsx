@@ -86,13 +86,13 @@ export default function Home() {
       </article> */}
       {/* BOTONES DE CATEGORIAS */}
       <section className='h-12 mb-2 flex items-center justify-center'>
-      <button className='h-8 bg-blue-500 rounded-xl text-center mr-2 '  onClick={() => funcionFiltrado("Comida")}> 
+      <button className='h-10 bg-blue-500 rounded-xl text-center mr-2 '  onClick={() => funcionFiltrado("Comida")}> 
         <p className='w-24 lg:w-[140px] font-semibold' > Comida </p>
       </button>
-      <button className='h-8 bg-blue-500 rounded-xl text-center mr-2'  onClick={() => funcionFiltrado("Gas")}> 
+      <button className='h-10 bg-blue-500 rounded-xl text-center mr-2'  onClick={() => funcionFiltrado("Gas")}> 
         <p className='w-24 lg:w-[140px] font-semibold' > Gas </p>
       </button>
-      <button className='h-8 bg-blue-500 rounded-xl text-center' onClick={() => funcionFiltrado("Hogar")}>
+      <button className='h-10 bg-blue-500 rounded-xl text-center' onClick={() => funcionFiltrado("Hogar")}>
         <p className='w-24 lg:w-[140px] font-semibold' > Hogar </p>
       </button>
       </section>
