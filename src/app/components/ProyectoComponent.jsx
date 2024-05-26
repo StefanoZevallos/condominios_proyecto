@@ -6,7 +6,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 
-const ProyectoComponent = ({ foto_negocio_url }) => {
+const ProyectoComponent = ({ foto_negocio_url,alt }) => {
 
   return (
     <>

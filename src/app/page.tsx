@@ -99,7 +99,8 @@ export default function Home() {
       <main className={styles.negocios_container}>
       {datos_negocio.map((dato) => (
           <ProyectoComponent
-            
+            alt={dato.alt}
+            key={dato.id}
             foto_negocio_url={dato.imagen_negocio}
           />
         ))}
