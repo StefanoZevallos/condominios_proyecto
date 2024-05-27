@@ -65,9 +65,11 @@ export default function Home() {
       },
     ]
   };
-  const [datos_negocio , setDatosNegocio] = useState(datosNegocio.data_negocios)
-  const [datos_originales_estatico] = useState(datosNegocio.data_negocios);
   
+  const [datos_originales_estatico] = useState(datosNegocio.data_negocios);
+  const negocios_home = datos_originales_estatico.filter((dato)=>dato.categoria==="Comida")
+  const [datos_negocio , setDatosNegocio] = useState(negocios_home)
+
   const funcionFiltrado = (categoria:any) => {
     const datosFiltrados = datos_originales_estatico.filter((dato) => dato.categoria === categoria);
     setDatosNegocio(datosFiltrados)
@@ -86,13 +88,13 @@ export default function Home() {
       </article> */}
       {/* BOTONES DE CATEGORIAS */}
       <section className='h-12 mb-2 flex items-center justify-center'>
-      <button className='h-10 bg-blue-500 rounded-xl text-center mr-2 '  onClick={() => funcionFiltrado("Comida")}> 
+      <button className='h-10 bg-orange-600 rounded-full text-center mr-2 '  onClick={() => funcionFiltrado("Comida")}> 
         <p className='w-24 lg:w-[140px] font-semibold' > Comida </p>
       </button>
-      <button className='h-10 bg-blue-500 rounded-xl text-center mr-2'  onClick={() => funcionFiltrado("Gas")}> 
+      <button className='h-10 bg-blue-500 rounded-full text-center mr-2'  onClick={() => funcionFiltrado("Gas")}> 
         <p className='w-24 lg:w-[140px] font-semibold' > Gas </p>
       </button>
-      <button className='h-10 bg-blue-500 rounded-xl text-center' onClick={() => funcionFiltrado("Hogar")}>
+      <button className='h-10 bg-blue-500 rounded-full text-center' onClick={() => funcionFiltrado("Hogar")}>
         <p className='w-24 lg:w-[140px] font-semibold' > Hogar </p>
       </button>
       </section>
