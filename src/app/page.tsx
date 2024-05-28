@@ -67,8 +67,8 @@ export default function Home() {
   };
   
   const [datos_originales_estatico] = useState(datosNegocio.data_negocios);
-  const negocios_home = datos_originales_estatico.filter((dato)=>dato.categoria==="Comida")
-  const [datos_negocio , setDatosNegocio] = useState(negocios_home)
+  const datos_negocios_home = datos_originales_estatico.filter((dato)=>dato.categoria==="Comida")
+  const [datos_negocio , setDatosNegocio] = useState(datos_negocios_home)
 
   const funcionFiltrado = (categoria:any) => {
     const datosFiltrados = datos_originales_estatico.filter((dato) => dato.categoria === categoria);
