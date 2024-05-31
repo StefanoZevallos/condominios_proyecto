@@ -79,14 +79,14 @@ export default function Home() {
 
   return (
     <>
-      {/* <article className={styles.nav_container}>
+       <article className={styles.nav_container}>
         <div className='h-[15%] mt-[10px]'>
-        <p className=' text-center'> Está página es un recopilatorio de todos los negocios del condominio las Praderas ,
-        que hacen el servicio de delivery. Incluye servicio de Gas , Comida , Cortinas , Delivery Tiendas.
+        <p className='p-2 text-center'> Esta pagina web reune todos los negocios del 
+        condominio las praderas como servicios de costura, entre otros, asi como
+        negocios de envio de gas y comida y servicios para el Hogar.
         </p>
-        <b> ¡POR AHORA SOLO NEGOCIOS DE COMIDA!</b>
         </div>
-      </article> */}
+      </article> 
       {/* BOTONES DE CATEGORIAS */}
       <section className='h-12 mb-2 flex items-center justify-center'>
       <button
