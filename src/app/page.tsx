@@ -18,7 +18,7 @@ export default function Home() {
       {
         id: 2,
         categoria: "Comida",
-        imagen_negocio: "https://res.cloudinary.com/dqpijrvsq/image/upload/v1707511331/condominios/lmbuv20aoaswisty9s3d.jpg",
+        imagen_negocio: "https://res.cloudinary.com/dqpijrvsq/image/upload/v1717192406/condominios/ofzbaiqer5mljctlpwnb.jpg",
         alt: "negocio_comida"
       },
       {
@@ -65,7 +65,8 @@ export default function Home() {
       },
     ]
   };
-  
+
+  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("Comida");
   const [datos_originales_estatico] = useState(datosNegocio.data_negocios);
   const datos_negocios_home = datos_originales_estatico.filter((dato)=>dato.categoria==="Comida")
   const [datos_negocio , setDatosNegocio] = useState(datos_negocios_home)
@@ -73,7 +74,7 @@ export default function Home() {
   const funcionFiltrado = (categoria:any) => {
     const datosFiltrados = datos_originales_estatico.filter((dato) => dato.categoria === categoria);
     setDatosNegocio(datosFiltrados)
-    console.log(datos_negocio); 
+    setCategoriaSeleccionada(categoria);
   };
 
   return (
@@ -88,16 +89,25 @@ export default function Home() {
       </article> */}
       {/* BOTONES DE CATEGORIAS */}
       <section className='h-12 mb-2 flex items-center justify-center'>
-      <button className='h-10 bg-orange-600 rounded-full text-center mr-2 '  onClick={() => funcionFiltrado("Comida")}> 
-        <p className='w-24 lg:w-[140px] font-semibold' > Comida </p>
+      <button
+        className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
+        onClick={() => funcionFiltrado("Comida")}
+      >
+        <p className='w-24 lg:w-[140px] font-semibold'> Comida </p>
       </button>
-      <button className='h-10 bg-blue-500 rounded-full text-center mr-2'  onClick={() => funcionFiltrado("Gas")}> 
-        <p className='w-24 lg:w-[140px] font-semibold' > Gas </p>
+      <button
+        className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Gas" ? 'bg-orange-600' : 'bg-blue-500'}`}
+        onClick={() => funcionFiltrado("Gas")}
+      >
+        <p className='w-24 lg:w-[140px] font-semibold'> Gas </p>
       </button>
-      <button className='h-10 bg-blue-500 rounded-full text-center' onClick={() => funcionFiltrado("Hogar")}>
-        <p className='w-24 lg:w-[140px] font-semibold' > Hogar </p>
+      <button
+        className={`h-10 rounded-full text-center ${categoriaSeleccionada === "Hogar" ? 'bg-orange-600' : 'bg-blue-500'}`}
+        onClick={() => funcionFiltrado("Hogar")}
+      >
+        <p className='w-24 lg:w-[140px] font-semibold'> Hogar </p>
       </button>
-      </section>
+    </section>
       <main className={styles.negocios_container}>
       {datos_negocio.map((dato) => (
           <ProyectoComponent
