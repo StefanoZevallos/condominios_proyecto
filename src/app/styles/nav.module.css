@@ -1,3 +1,4 @@
+
 .nav_container {
   background-color: rgb(233, 238, 248);
   height: 160px;
@@ -12,6 +13,7 @@
   .negocios_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0;
+    background-color: red;
+    justify-items: center;
   }
 }
