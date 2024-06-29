@@ -174,7 +174,8 @@ export default function Home() {
     infinite: false,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    arrows: false
   };
   return (
     <>
@@ -187,9 +188,9 @@ export default function Home() {
         </div>
       </article>
       {/* BOTONES DE CATEGORIAS */}
-      <section className='h-12 mb-2 flex items-center justify-center overflow-x-auto space-x-2'>
+      {/* <section className='h-12 mb-2 flex items-center justify-center overflow-x-auto space-x-2 '>
         <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          className={`ml-28 h-10 rounded-full text-center  ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => funcionFiltrado("Comida")}
         >
           <p className='w-24 lg:w-[140px] font-semibold'> Comida </p>
@@ -212,11 +213,11 @@ export default function Home() {
         >
           <p className='w-24 lg:w-[140px] font-semibold'> Agua </p>
         </button>
-      </section>
+      </section> */}
     {/* div de abjo tiene negocios_container como clase se borro */}
-      <div>
+      <div className='w-[100%] flex flex-col items-center'>
         {datos_negocio.map((negocio) => (
-            <Slider key={negocio.id} {...settings} className='w-full h-[400px] mb-8 mt-8 flex justify-center items-center'>
+            <Slider key={negocio.id} {...settings} className='w-[290px] mb-8 bg-blue-500 flex justify-center items-center'>
               {negocio.imagenes_negocio.map((imagen, index) => (
                   <Negocio key={index} alt={negocio.alt} foto_negocio_url={imagen} />
               ))}
