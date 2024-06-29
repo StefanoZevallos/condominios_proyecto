@@ -48,15 +48,6 @@ export default function Home() {
         alt: "negocio_comida"
       },
       {
-        id: 5,
-        categoria: "Comida",
-        imagenes_negocio: [
-          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1707510722/condominios/ih6judbecgxpceb7ki2n.jpg",
-          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1717192406/condominios/ofzbaiqer5mljctlpwnb.jpg"
-        ],
-        alt: "negocio_comida"
-      },
-      {
         id: 6,
         categoria: "Hogar",
         imagenes_negocio: [
