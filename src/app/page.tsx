@@ -188,7 +188,7 @@ export default function Home() {
         </div>
       </article>
       {/* BOTONES DE CATEGORIAS */}
-      {/* <section className='h-12 mb-2 flex items-center justify-center overflow-x-auto space-x-2 '>
+       <section className='h-12 mb-2 flex items-center justify-center overflow-x-auto space-x-2 '>
         <button
           className={`ml-28 h-10 rounded-full text-center  ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => funcionFiltrado("Comida")}
@@ -213,11 +213,11 @@ export default function Home() {
         >
           <p className='w-24 lg:w-[140px] font-semibold'> Agua </p>
         </button>
-      </section> */}
+      </section> 
     {/* div de abjo tiene negocios_container como clase se borro */}
       <div className='w-[100%] flex flex-col items-center'>
         {datos_negocio.map((negocio) => (
-            <Slider key={negocio.id} {...settings} className='w-[290px] mb-8 bg-blue-500 flex justify-center items-center'>
+            <Slider key={negocio.id} {...settings} className='w-[300px] mb-8 flex justify-center items-center'>
               {negocio.imagenes_negocio.map((imagen, index) => (
                   <Negocio key={index} alt={negocio.alt} foto_negocio_url={imagen} />
               ))}
