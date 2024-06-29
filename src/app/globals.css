@@ -8,3 +8,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.slick-dots li button:before {
+    @apply text-lg; /* Ajusta este valor al tamaño deseado */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    @apply text-red-500; /* Ajusta este valor al color deseado */
+  }

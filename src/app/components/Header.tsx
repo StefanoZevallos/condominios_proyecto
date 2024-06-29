@@ -10,7 +10,7 @@ const Header = () => {
       <div className='text-md font-bold cursor-pointer text-white'>
          <Link href={"/"}>
           <p className='ml-4'>Negocios </p>
-          <p className='ml-4'>Condominios </p>
+          <p className='ml-4'>Micaela </p>
          </Link> 
         </div>
         <div className='ml-2 w-[32px]'>

@@ -2,12 +2,11 @@
 import React from 'react'
 import Slider from "react-slick";
 import styles from "@/app/styles/nav.module.css";
-import ProyectoComponent from "@/app/components/ProyectoComponent"
+import Negocio from "@/app/components/Negocio"
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 
 export default function Home() {
   const datosNegocio = {
@@ -19,10 +18,37 @@ export default function Home() {
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1717192406/condominios/ofzbaiqer5mljctlpwnb.jpg",
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719545884/condominios/gc1bs91ahdkxnng74cz3.jpg"
         ],
+        alt: "negocio_machis"
+      },
+      {
+        id: 2,
+        categoria: "Agua",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695346/condominios/db0jiz5grjh0ubhdgxpa.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695346/condominios/mariq6nftyx9myhnqtyh.jpg"
+        ],
+        alt: "negocio_agua"
+      },
+      {
+        id: 3,
+        categoria: "Agua",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695346/condominios/fncgs30llmtkghwm7ely.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695346/condominios/fqjxktteks7wqrksyevy.jpg"
+        ],
+        alt: "negocio_agua"
+      },
+      {
+        id: 4,
+        categoria: "Comida",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695346/condominios/lc3mxb0dwvwhgerawnth.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695347/condominios/ce6ywhukoiigwtyw7n3u.jpg"
+        ],
         alt: "negocio_comida"
       },
       {
-        id: 1,
+        id: 5,
         categoria: "Comida",
         imagenes_negocio: [
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1707510722/condominios/ih6judbecgxpceb7ki2n.jpg",
@@ -31,13 +57,103 @@ export default function Home() {
         alt: "negocio_comida"
       },
       {
-        id: 1,
+        id: 6,
+        categoria: "Hogar",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695347/condominios/vjk0ecb6jrlpv0tqbkgc.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695348/condominios/eot699ksdu46yvapg7vb.jpg"
+        ],
+        alt: "negocio_cama_spazzio"
+      },
+      {
+        id: 7,
+        categoria: "Hogar",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695347/condominios/p3ohgukdr210peg7gzxg.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695347/condominios/fcjhzkpc5entnfs9pczp.jpg"
+        ],
+        alt: "negocio_cortinas"
+      },
+      {
+        id: 8,
+        categoria: "Gas",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695366/condominios/qdlvanvnvoakj85mmupr.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695388/condominios/ebnjd11tdyasoqj231mp.jpg"
+        ],
+        alt: "negocio_gas"
+      },
+      {
+        id: 9,
         categoria: "Comida",
         imagenes_negocio: [
-          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1707510722/condominios/ih6judbecgxpceb7ki2n.jpg",
-          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1717192406/condominios/ofzbaiqer5mljctlpwnb.jpg"
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695417/condominios/eg4jq7lei5tglrmnixnu.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695417/condominios/lnnnifrdt4ktvn33llc7.jpg"
+        ],
+        alt: "negocio_comida_burger_dotti"
+      },
+      {
+        id: 10,
+        categoria: "Comida",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695418/condominios/yvh0wrtqzuyn8mpeu4wd.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695418/condominios/f2q1wfy8jlkqnkixvl9p.jpg"
+        ],
+        alt: "negocio_comida_finas_brasas"
+      },
+      {
+        id: 11,
+        categoria: "Hogar",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695417/condominios/ktgzvkinq1wmu3xsmspm.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695417/condominios/ktgzvkinq1wmu3xsmspm.jpg"
+        ],
+        alt: "negocio_electrodomesticos"
+      },
+      {
+        id: 12,
+        categoria: "Gas",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695418/condominios/tjx0ruxu5qbvfyxpcroq.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695419/condominios/byxf9zvooh2uff8tjg9f.jpg"
+        ],
+        alt: "negocio_gas"
+      },
+      {
+        id: 13,
+        categoria: "Hogar",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695419/condominios/sbcoailkszhqpi2uenco.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695419/condominios/igwupi8alrzay3f6k9p0.jpg"
+        ],
+        alt: "negocio_melamine"
+      },
+      {
+        id: 14,
+        categoria: "Comida",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695419/condominios/ygqqsdomtf2vn0xekh7r.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695420/condominios/y2hsxltor7k6mkdeeq75.jpg"
         ],
         alt: "negocio_comida"
+      },
+      {
+        id: 15,
+        categoria: "Hogar",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695420/condominios/wms2fmtsbt8azfejyk66.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695420/condominios/gdvhevbsz4d1qptvkakq.jpg"
+        ],
+        alt: "negocio_brau_lions"
+      },
+      {
+        id: 16,
+        categoria: "Hogar",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695420/condominios/vqxwyupyyyjy9g4lznjf.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695420/condominios/l2xgxliuivooxmmtqnr7.jpg"
+        ],
+        alt: "negocio_the_new_home"
       },
     ]
   };
@@ -55,8 +171,8 @@ export default function Home() {
 
   const settings = {
     dots: true,
-    infinite: true,
-    speed: 200,
+    infinite: false,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1
   };
@@ -93,10 +209,10 @@ export default function Home() {
       </section>
     {/* div de abjo tiene negocios_container como clase se borro */}
       <div>
-        {datosNegocio.data_negocios.map((negocio) => (
+        {datos_negocio.map((negocio) => (
             <Slider key={negocio.id} {...settings} className='w-full h-[400px] mb-8 mt-8 flex justify-center items-center'>
               {negocio.imagenes_negocio.map((imagen, index) => (
-                  <ProyectoComponent key={index} alt={negocio.alt} foto_negocio_url={imagen} />
+                  <Negocio key={index} alt={negocio.alt} foto_negocio_url={imagen} />
               ))}
             </Slider>
         ))}

@@ -6,7 +6,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 
-const ProyectoComponent = ({ foto_negocio_url,alt }) => {
+const Negocio = ({ foto_negocio_url,alt }) => {
 
   return (
     <>
@@ -24,4 +24,4 @@ const ProyectoComponent = ({ foto_negocio_url,alt }) => {
   )
 }
 
-export default ProyectoComponent
+export default Negocio
