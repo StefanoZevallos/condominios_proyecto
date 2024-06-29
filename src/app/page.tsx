@@ -217,7 +217,7 @@ export default function Home() {
     {/* div de abjo tiene negocios_container como clase se borro */}
       <div className='w-[100%] flex flex-col items-center'>
         {datos_negocio.map((negocio) => (
-            <Slider key={negocio.id} {...settings} className='w-[300px] mb-8 flex justify-center items-center'>
+            <Slider key={negocio.id} {...settings} className='w-[95%] mb-8 flex justify-center items-center'>
               {negocio.imagenes_negocio.map((imagen, index) => (
                   <Negocio key={index} alt={negocio.alt} foto_negocio_url={imagen} />
               ))}
