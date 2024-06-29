@@ -187,7 +187,7 @@ export default function Home() {
         </div>
       </article>
       {/* BOTONES DE CATEGORIAS */}
-      <section className='h-12 mb-2 flex items-center justify-center'>
+      <section className='h-12 mb-2 flex items-center justify-center overflow-x-auto space-x-2'>
         <button
           className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => funcionFiltrado("Comida")}
@@ -205,6 +205,12 @@ export default function Home() {
           onClick={() => funcionFiltrado("Hogar")}
         >
           <p className='w-24 lg:w-[140px] font-semibold'> Hogar </p>
+        </button>
+        <button
+          className={`h-10 rounded-full text-center ${categoriaSeleccionada === "Agua" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          onClick={() => funcionFiltrado("Agua")}
+        >
+          <p className='w-24 lg:w-[140px] font-semibold'> Agua </p>
         </button>
       </section>
     {/* div de abjo tiene negocios_container como clase se borro */}
