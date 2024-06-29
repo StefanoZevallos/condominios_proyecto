@@ -190,7 +190,7 @@ export default function Home() {
       {/* BOTONES DE CATEGORIAS */}
        <section className='h-12 mb-2 flex items-center justify-center overflow-x-auto space-x-2 '>
         <button
-          className={`ml-28 h-10 rounded-full text-center  ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => funcionFiltrado("Comida")}
         >
           <p className='w-24 lg:w-[140px] font-semibold'> Comida </p>
