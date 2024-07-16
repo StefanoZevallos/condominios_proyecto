@@ -15,7 +15,7 @@ export default function Home() {
         id: 1,
         categoria: "Comida",
         imagenes_negocio: [
-          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1717192406/condominios/ofzbaiqer5mljctlpwnb.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1721096393/condominios/ccnvwfuxlyl7by68piyp.jpg",
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719545884/condominios/gc1bs91ahdkxnng74cz3.jpg"
         ],
         alt: "negocio_machis"
