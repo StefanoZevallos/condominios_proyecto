@@ -172,9 +172,8 @@ export default function Home() {
     <>
       <article className={styles.nav_container}>
         <div className='h-[15%] mt-[10px]'>
-          <p className='p-2 text-center'> Esta pagina web reune todos los negocios del
-            condominio las praderas como servicios de costura, entre otros, asi como
-            negocios de envio de gas y comida y servicios para el Hogar.
+          <p className='p-2 text-center'> Esta pagina web reune todos los negocios de la zona Micaela en Comas.
+             Como servicios de comida delivery, Envio de Gas , Reparaciones del Hogar , etc.
           </p>
         </div>
       </article>
@@ -208,7 +207,7 @@ export default function Home() {
     {/* div de abjo tiene negocios_container como clase se borro */}
       <div className='w-[100%] flex flex-col items-center'>
         {datos_negocio.map((negocio) => (
-            <Slider key={negocio.id} {...settings} className='w-[98%] mb-8 flex justify-center items-center'>
+            <Slider key={negocio.id} {...settings} className='w-[99%] mb-8 flex justify-center items-center'>
               {negocio.imagenes_negocio.map((imagen, index) => (
                   <Negocio key={index} alt={negocio.alt} foto_negocio_url={imagen} />
               ))}
