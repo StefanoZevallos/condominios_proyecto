@@ -173,12 +173,13 @@ export default function Home() {
       <article className={styles.nav_container}>
         <div className='h-[15%] mt-[10px]'>
           <p className='p-2 text-center'> Esta pagina web reune todos los negocios de la zona Micaela en Comas.
-             Como servicios de comida delivery, Envio de Gas , Reparaciones del Hogar , etc.
+             Como Delivery de comida, Envio de Gas, Reparaciones del Hogar, etc.
           </p>
         </div>
       </article>
       {/* BOTONES DE CATEGORIAS */}
        <section className='ml-2 h-12 mb-2 flex  items-center overflow-x-auto space-x-2 '>
+        <p> CATEGORIAS </p>
         <button
           className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => funcionFiltrado("Comida")}
@@ -207,7 +208,7 @@ export default function Home() {
     {/* div de abjo tiene negocios_container como clase se borro */}
       <div className='w-[100%] flex flex-col items-center'>
         {datos_negocio.map((negocio) => (
-            <Slider key={negocio.id} {...settings} className='w-[100%] mb-8 flex justify-center items-center'>
+            <Slider key={negocio.id} {...settings} className='w-[99%] mb-8 flex justify-center items-center'>
               {negocio.imagenes_negocio.map((imagen, index) => (
                   <Negocio key={index} alt={negocio.alt} foto_negocio_url={imagen} />
               ))}
