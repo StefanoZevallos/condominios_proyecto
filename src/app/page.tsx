@@ -175,10 +175,11 @@ export default function Home() {
           <p className='p-2 text-center'> Esta pagina web reune todos los negocios de la zona Micaela en Comas.
              Como Delivery de comida, Envio de Gas, Reparaciones del Hogar, etc.
           </p>
+          <p> ¡Disfruta la comodidad de tener juntos tus negocios cercanos!  </p>
         </div>
       </article>
       {/* BOTONES DE CATEGORIAS */}
-      <p className='ml-2 font-bold text-md'> CATEGORIAS </p>
+      <p className='ml-2 font-bold text-md px-2'> CATEGORIAS:</p>
        <section className='ml-2 h-12 mb-2 flex  items-center overflow-x-auto space-x-2 '>
         <button
           className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
