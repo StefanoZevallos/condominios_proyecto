@@ -171,7 +171,7 @@ export default function Home() {
   return (
     <>
       <article className={styles.nav_container}>
-        <div className='h-[15%] mt-[10px]'>
+        <div className='h-[17%] mt-[10px]'>
           <p className='p-2 text-center'> Esta pagina web reune todos los negocios de la zona Micaela en Comas.
              Como Delivery de comida, Envio de Gas, Reparaciones del Hogar, etc.
           </p>
