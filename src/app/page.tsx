@@ -178,8 +178,8 @@ export default function Home() {
         </div>
       </article>
       {/* BOTONES DE CATEGORIAS */}
+      <p className='ml-2 font-bold text-md'> CATEGORIAS </p>
        <section className='ml-2 h-12 mb-2 flex  items-center overflow-x-auto space-x-2 '>
-        <p> CATEGORIAS </p>
         <button
           className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => funcionFiltrado("Comida")}
