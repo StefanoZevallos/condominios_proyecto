@@ -175,7 +175,7 @@ export default function Home() {
           <p className='p-2 text-center'> Reunimos todos los negocios de la zona Micaela en Comas.
              Como Delivery de comida, Envio de Gas, Reparaciones del Hogar, Instalaciones Electricas , Melamines, etc.
           </p>
-          <p className='pl-4 pr-4 pb-4 text-center font-bold '> ¡Disfruta la comodidad de tener juntos tus negocios cercanos!  </p>
+          {/* <p className='pl-4 pr-4 pb-4 text-center font-bold '> ¡Disfruta la comodidad de tener juntos tus negocios cercanos!  </p> */}
         </div>
         
       </article>
