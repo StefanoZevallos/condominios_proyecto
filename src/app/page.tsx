@@ -181,7 +181,7 @@ export default function Home() {
       </article>
       
       {/* BOTONES DE CATEGORIAS */}
-      <p className=' font-semibold text-md px-2'> Categorias:</p>
+      <p className='font-semibold text-md ml-2 mt-[3px]'> Categorias:</p>
        <section className='ml-2 h-12 mb-2 flex  items-center overflow-x-auto space-x-2 '>
         <button
           className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
