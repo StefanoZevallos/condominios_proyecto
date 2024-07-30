@@ -225,7 +225,7 @@ export default function Home() {
         {datos_negocio.map((negocio) => (
             <Slider  key={negocio.id} {...settings}  className='w-[100%] mb-8 flex justify-center items-center'>
               {negocio.imagenes_negocio.map((imagen, index) => (
-                <div  onClick={() => handleImageClick()}>
+                <div  key={index} onClick={() => handleImageClick()}>
                   <Negocio   key={index} alt={negocio.alt} foto_negocio_url={imagen} />
                   </div>
               ))}
