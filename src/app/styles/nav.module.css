@@ -8,11 +8,19 @@
   align-items: center;
 }
 
-@media (min-width: 700px) {
+.negocios_container{ 
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-items: center;
+}
+
+@media (min-width: 1024px) {
   .negocios_container {
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: red;
-    justify-items: center;
+    grid-template-columns: 500px 500px 500px;
+    place-content: center;
+    gap: 100px;
   }
 }

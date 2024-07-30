@@ -153,11 +153,23 @@ export default function Home() {
   const [datos_originales_estatico] = useState(datosNegocio.data_negocios);
   const datos_negocios_home = datos_originales_estatico.filter((dato) => dato.categoria === "Comida")
   const [datos_negocio, setDatosNegocio] = useState(datos_negocios_home)
+  const [showModal, setShowModal] = useState(false);
+  const [selectedNegocio, setSelectedNegocio] = useState(null);
 
   const funcionFiltrado = (categoria: any) => {
     const datosFiltrados = datos_originales_estatico.filter((dato) => dato.categoria === categoria);
     setDatosNegocio(datosFiltrados)
     setCategoriaSeleccionada(categoria);
+  };
+
+  const handleImageClick = () => {
+    // setSelectedNegocio(negocio);
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    setSelectedNegocio(null);
   };
 
   const settings = {
@@ -209,15 +221,38 @@ export default function Home() {
         </button>
       </section> 
     {/* div de abjo tiene negocios_container como clase se borro */}
-      <div className='w-[100%] flex flex-col items-center'>
+      <div className={styles.negocios_container}>
         {datos_negocio.map((negocio) => (
-            <Slider key={negocio.id} {...settings} className='w-[100%] mb-8 flex justify-center items-center'>
+            <Slider  key={negocio.id} {...settings}  className='w-[100%] mb-8 flex justify-center items-center'>
               {negocio.imagenes_negocio.map((imagen, index) => (
-                  <Negocio key={index} alt={negocio.alt} foto_negocio_url={imagen} />
+                <div  onClick={() => handleImageClick()}>
+                  <Negocio   key={index} alt={negocio.alt} foto_negocio_url={imagen} />
+                  </div>
               ))}
             </Slider>
         ))}
+        {showModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+          <div className="relative bg-white p-4 rounded max-w-lg h-[90%] w-full">
+            <button onClick={closeModal} className="absolute top-2 right-2 text-red-500">Cerrar</button>
+              <div className="text-center">
+                <h2 className="text-2xl mb-4"></h2>
+                <p className="mb-4"></p>
+                {/* Simulación de una imagen con fondo rojo */}
+                <div className="bg-red-500 h-48 mb-4 flex justify-center items-center text-white">
+                  Imagen del Negocio
+                </div>
+                {/* Botón de WhatsApp */}
+                <a href={`https://wa.me/?text=Estoy interesado en:`} target="_blank" rel="noopener noreferrer">
+                  <button className="bg-green-500 text-white py-2 px-4 rounded">WhatsApp</button>
+                </a>
+              </div>
+      
+          </div>
+        </div>
+      )}
       </div>
+      
 
     </>
   )
