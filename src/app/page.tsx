@@ -153,8 +153,9 @@ export default function Home() {
   const [datos_originales_estatico] = useState(datosNegocio.data_negocios);
   const datos_negocios_home = datos_originales_estatico.filter((dato) => dato.categoria === "Comida")
   const [datos_negocio, setDatosNegocio] = useState(datos_negocios_home)
+  const [datos_negocioPopUp, setDatosNegocioPopUp] = useState(datos_negocios_home)
   const [showModal, setShowModal] = useState(false);
-  const [selectedNegocio, setSelectedNegocio] = useState(null);
+
 
   const funcionFiltrado = (categoria: any) => {
     const datosFiltrados = datos_originales_estatico.filter((dato) => dato.categoria === categoria);
@@ -162,14 +163,16 @@ export default function Home() {
     setCategoriaSeleccionada(categoria);
   };
 
-  const handleImageClick = () => {
-    // setSelectedNegocio(negocio);
+  const handleImageClick = (index:any) => {
+    const datosFiltradosPopUp = datos_originales_estatico.filter((dato) => dato.id === index);
+    setDatosNegocioPopUp(datosFiltradosPopUp);
     setShowModal(true);
+    console.log(datos_negocioPopUp);
+    
   };
 
   const closeModal = () => {
     setShowModal(false);
-    setSelectedNegocio(null);
   };
 
   const settings = {
@@ -185,16 +188,16 @@ export default function Home() {
       <article className={styles.nav_container}>
         <div className='h-[20%] mt-[10px]'>
           <p className='p-2 text-center'> Reunimos todos los negocios de la zona Micaela en Comas.
-             Como Delivery de comida, Envio de Gas, Reparaciones del Hogar, Instalaciones Electricas , Melamines, etc.
+            Como Delivery de comida, Envio de Gas, Reparaciones del Hogar, Instalaciones Electricas , Melamines, etc.
           </p>
           {/* <p className='pl-4 pr-4 pb-4 text-center font-bold '> ¡Disfruta la comodidad de tener juntos tus negocios cercanos!  </p> */}
         </div>
-        
+
       </article>
-      
+
       {/* BOTONES DE CATEGORIAS */}
       <p className='font-semibold text-md ml-2 mt-[3px]'> Categorias:</p>
-       <section className='ml-2 h-12 mb-2 flex  items-center overflow-x-auto space-x-2 '>
+      <section className='ml-2 h-12 mb-2 flex  items-center overflow-x-auto space-x-2 '>
         <button
           className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => funcionFiltrado("Comida")}
@@ -219,40 +222,45 @@ export default function Home() {
         >
           <p className='w-24 lg:w-[140px] font-semibold'> Agua </p>
         </button>
-      </section> 
-    {/* div de abjo tiene negocios_container como clase se borro */}
+      </section>
+      {/* div de abjo tiene negocios_container como clase se borro */}
       <div className={styles.negocios_container}>
         {datos_negocio.map((negocio) => (
-            <Slider  key={negocio.id} {...settings}  className='w-[100%] mb-8 flex justify-center items-center'>
-              {negocio.imagenes_negocio.map((imagen, index) => (
-                <div  key={index} onClick={() => handleImageClick()}>
-                  <Negocio   key={index} alt={negocio.alt} foto_negocio_url={imagen} />
-                  </div>
-              ))}
-            </Slider>
+          <Slider key={negocio.id} {...settings} className='w-[100%] mb-8 flex justify-center items-center'>
+            {negocio.imagenes_negocio.map((imagen, index) => (
+              <div key={index} onClick={() => handleImageClick(negocio.id)}>
+                <Negocio key={index} alt={negocio.alt} foto_negocio_url={imagen} />
+              </div>
+            ))}
+          </Slider>
         ))}
         {showModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-          <div className="relative bg-white p-4 rounded max-w-lg h-[90%] w-full">
-            <button onClick={closeModal} className="absolute top-2 right-2 text-red-500">Cerrar</button>
-              <div className="text-center">
-                <h2 className="text-2xl mb-4"></h2>
-                <p className="mb-4"></p>
-                {/* Simulación de una imagen con fondo rojo */}
-                <div className="bg-red-500 h-48 mb-4 flex justify-center items-center text-white">
-                  Imagen del Negocio
-                </div>
-                {/* Botón de WhatsApp */}
-                <a href={`https://wa.me/?text=Estoy interesado en:`} target="_blank" rel="noopener noreferrer">
-                  <button className="bg-green-500 text-white py-2 px-4 rounded">WhatsApp</button>
-                </a>
-              </div>
-      
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+          <div className="relative bg-white p-4 rounded max-w-lg w-full">
+            <button onClick={closeModal} className="absolute top-2 right-2 text-red-500 z-50 bg-white bg-opacity-80 px-2 py-1 rounded">
+              Cerrar
+            </button>
+            <div className="mb-4">
+              {datos_negocioPopUp.map((negocio) => (
+                <Slider key={negocio.id} {...settings} className="w-[100%] mb-8 flex justify-center items-center">
+                  {negocio.imagenes_negocio.map((imagen, index) => (
+                    <div key={index}>
+                      <Negocio key={index} alt={negocio.alt} foto_negocio_url={imagen} />
+                    </div>
+                  ))}
+                </Slider>
+              ))}
+            </div>
+            <div className="flex justify-center mt-4">
+              <a href={`https://wa.me/?text=Estoy interesado en `} target="_blank" rel="noopener noreferrer">
+                <button className="bg-green-500 text-white py-2 px-4 rounded">WhatsApp</button>
+              </a>
+            </div>
           </div>
         </div>
-      )}
+        )}
       </div>
-      
+
 
     </>
   )
