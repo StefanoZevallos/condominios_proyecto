@@ -20,6 +20,17 @@ export default function Home() {
   const [datos_negocioPopUp, setDatosNegocioPopUp] = useState(datos_negocios_home)
   const [showModal, setShowModal] = useState(false);
 
+  useEffect(() => {
+    if (showModal) {
+      document.body.style.overflow = 'hidden'; // Deshabilita el scroll
+    } else {
+      document.body.style.overflow = 'auto'; // Habilita el scroll
+    }
+    return () => {
+      document.body.style.overflow = 'auto'; // Asegúrate de restaurar el estado al desmontar
+    };
+  }, [showModal]);
+
 
   const funcionFiltrado = (categoria: any) => {
     const datosFiltrados = datos_originales_estatico.filter((dato) => dato.categoria === categoria);
