@@ -115,7 +115,7 @@ export default function Home() {
                 <Zoom >
                 <Slider key={negocio.id} {...settings} className="w-[100%] mb-8 flex justify-center items-center">
                   {negocio.imagenes_negocio.map((imagen, index) => (
-                    <Zoom>
+                    <Zoom key={index}>
                       <Negocio key={index} alt={negocio.alt} foto_negocio_url={imagen} />
                       </Zoom>
                   ))}
