@@ -3,20 +3,322 @@
         {
             "id": 1,
             "categoria": "Comida",
-            "imagen_negocio": "https://res.cloudinary.com/dqpijrvsq/image/upload/v1707510722/condominios/ih6judbecgxpceb7ki2n.jpg",
-            "alt": "negocio_comida"
-        },
-        {
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1721096393/condominios/ccnvwfuxlyl7by68piyp.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719545884/condominios/gc1bs91ahdkxnng74cz3.jpg"
+            ],
+            "alt": "negocio_machis",
+            "telefono":"919462045"
+          },
+          {
+            "id": 2,
+            "categoria": "Agua",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695346/condominios/db0jiz5grjh0ubhdgxpa.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695346/condominios/mariq6nftyx9myhnqtyh.jpg"
+            ],
+            "alt": "negocio_agua_alcalina",
+             "telefono":"944255859"
+          },
+          {
             "id": 3,
+            "categoria": "Agua",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695346/condominios/fncgs30llmtkghwm7ely.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695346/condominios/fqjxktteks7wqrksyevy.jpg"
+            ],
+            "alt": "negocio_agua_agualand",
+             "telefono":"906359736"
+          },
+          {
+            "id": 4,
             "categoria": "Comida",
-            "imagen_negocio": "https://res.cloudinary.com/dqpijrvsq/image/upload/v1707511331/condominios/lmbuv20aoaswisty9s3d.jpg",
-            "alt": "negocio_comida"
-        },
-        {
-            "id": 3,
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695346/condominios/lc3mxb0dwvwhgerawnth.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695347/condominios/ce6ywhukoiigwtyw7n3u.jpg"
+            ],
+            "alt": "negocio_comida_antojos_micaela",
+             "telefono":"955548263"
+          },
+          {
+            "id": 6,
+            "categoria": "Hogar",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695347/condominios/vjk0ecb6jrlpv0tqbkgc.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695348/condominios/eot699ksdu46yvapg7vb.jpg"
+            ],
+            "alt": "negocio_cama_spazzio",
+             "telefono":"978617972"
+          },
+          {
+            "id": 7,
+            "categoria": "Hogar",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695347/condominios/p3ohgukdr210peg7gzxg.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695347/condominios/fcjhzkpc5entnfs9pczp.jpg"
+            ],
+            "alt": "negocio_cortinas_innova_deccor",
+             "telefono":"935620574"
+          },
+          {
+            "id": 8,
             "categoria": "Gas",
-            "imagen_negocio": "https://res.cloudinary.com/dqpijrvsq/image/upload/v1716592510/condominios/dhcitxz6ofbnl3deuhxu.jpg",
-            "alt": "negocio_gas"
-        }
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695366/condominios/qdlvanvnvoakj85mmupr.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695388/condominios/ebnjd11tdyasoqj231mp.jpg"
+            ],
+            "alt": "negocio_gas_dania_gas",
+             "telefono":"943134918"
+          },
+          {
+            "id": 9,
+            "categoria": "Comida",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695417/condominios/eg4jq7lei5tglrmnixnu.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695417/condominios/lnnnifrdt4ktvn33llc7.jpg"
+            ],
+            "alt": "negocio_comida_burger_dotti",
+             "telefono":"924944312"
+          },
+          {
+            "id": 10,
+            "categoria": "Comida",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695418/condominios/yvh0wrtqzuyn8mpeu4wd.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695418/condominios/f2q1wfy8jlkqnkixvl9p.jpg"
+            ],
+            "alt": "negocio_comida_finas_brasas",
+             "telefono":"918042497"
+          },
+          {
+            "id": 11,
+            "categoria": "Hogar",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695417/condominios/ktgzvkinq1wmu3xsmspm.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695417/condominios/ktgzvkinq1wmu3xsmspm.jpg"
+            ],
+            "alt": "negocio_electrodomesticos",
+             "telefono":"946719400"
+          },
+          {
+            "id": 12,
+            "categoria": "Gas",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695418/condominios/tjx0ruxu5qbvfyxpcroq.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695419/condominios/byxf9zvooh2uff8tjg9f.jpg"
+            ],
+            "alt": "negocio_gas_eden",
+             "telefono":"953079324"
+          },
+          {
+            "id": 13,
+            "categoria": "Hogar",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695419/condominios/sbcoailkszhqpi2uenco.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695419/condominios/igwupi8alrzay3f6k9p0.jpg"
+            ],
+            "alt": "negocio_melamine_mundo_melamine",
+             "telefono":"989874381"
+          },
+          {
+            "id": 14,
+            "categoria": "Comida",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695419/condominios/ygqqsdomtf2vn0xekh7r.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695420/condominios/y2hsxltor7k6mkdeeq75.jpg"
+            ],
+            "alt": "negocio_comida",
+             "telefono":"972008860"
+          },
+          {
+            "id": 15,
+            "categoria": "Hogar",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695420/condominios/wms2fmtsbt8azfejyk66.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695420/condominios/gdvhevbsz4d1qptvkakq.jpg"
+            ],
+            "alt": "negocio_brau_lions",
+             "telefono":"946750678"
+          },
+          {
+            "id": 16,
+            "categoria": "Hogar",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695420/condominios/vqxwyupyyyjy9g4lznjf.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695420/condominios/l2xgxliuivooxmmtqnr7.jpg"
+            ],
+            "alt": "negocio_the_new_home",
+            "telefono":"961254320"
+          },
+          {
+            "id": 17,
+            "categoria": "Hogar",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743128/condominios/pfdjk3aujhcezsohuleh.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743128/condominios/ojufuohcchzc5bypfafj.jpg"
+            ],
+            "alt": "negocio_insure",
+            "telefono":"919462045"
+          },
+          {
+            "id": 18,
+            "categoria": "Comida",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743128/condominios/wsoe1pkt1nunewcuoyux.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743128/condominios/md7evalvo1ufte218aop.jpg"
+            ],
+            "alt": "negocio_pollo_julys",
+            "telefono":"919462045"
+          },
+          {
+            "id": 19,
+            "categoria": "Comida",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743130/condominios/jwlq3845qxytnmafl6lm.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743130/condominios/hmjx5kqfoxqxnkko5xpb.jpg"
+            ],
+            "alt": "negocio_pollo_tyagos",
+            "telefono":"919462045"
+          },
+          {
+            "id": 20,
+            "categoria": "Comida",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743130/condominios/yvs6gxopnve8znp1tpgu.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743130/condominios/hmjx5kqfoxqxnkko5xpb.jpg"
+            ],
+            "alt": "negocio_pollo_solano",
+            "telefono":"919462045"
+          },
+          {
+            "id": 21,
+            "categoria": "Comida",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743130/condominios/d38slmv6rcvfhdxsjox6.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743130/condominios/umkw6m5w5iaumpxbydgo.jpg"
+            ],
+            "alt": "negocio_alitas_wings",
+            "telefono":"919462045"
+          },
+          {
+            "id": 22,
+            "categoria": "Comida",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743130/condominios/rxrsmgip0vmd82lwdhdz.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743130/condominios/xaqbmdlcm9m0eorjwevp.jpg"
+            ],
+            "alt": "negocio_alitas_gios",
+            "telefono":"919462045"
+          },
+          {
+            "id": 23,
+            "categoria": "Comida",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743129/condominios/zjd4oralqhj5tzleclwp.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743129/condominios/nj4dmyvhc7sfsswownnn.jpg"
+            ],
+            "alt": "negocio_alitas_miramar",
+            "telefono":"919462045"
+          },
+          {
+            "id": 24,
+            "categoria": "Otros",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743129/condominios/wyyup9tpsmdaltlfgzrt.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743129/condominios/wyyup9tpsmdaltlfgzrt.jpg"
+            ],
+            "alt": "negocio_romas_spa",
+            "telefono":"919462045"
+          },
+          {
+            "id": 25,
+            "categoria": "Gas",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743129/condominios/x6u7dgmuet82pzgfez0h.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743129/condominios/qwuubi2eylufhonm1o8b.jpg"
+            ],
+            "alt": "negocio_mahya_gas",
+            "telefono":"919462045"
+          },
+          {
+            "id": 26,
+            "categoria": "Hogar",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743129/condominios/yatpgecagvdojs2xxcqb.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743128/condominios/gebcshob8vj5uwdh06hx.jpg"
+            ],
+            "alt": "negocio_mudanzas",
+            "telefono":"919462045"
+          },
+          {
+            "id": 27,
+            "categoria": "Gas",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743129/condominios/zhfdn45aabyaaawcu3c5.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743129/condominios/nntvrzq5imznheqzehmv.jpg"
+            ],
+            "alt": "negocio_gas_dairon",
+            "telefono":"919462045"
+          },
+          {
+            "id": 28,
+            "categoria": "Otros",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746570/condominios/usensyivyjudg20y5kqw.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746761/condominios/osrbov3ho2tfsh4e4ip9.jpg"
+            ],
+            "alt": "negocio_lotes_huacho",
+            "telefono":"919462045"
+          },
+          {
+            "id": 29,
+            "categoria": "Gas",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746570/condominios/orfuftizndukao7dqknx.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746570/condominios/idqakduh7pltx7iye73a.jpg"
+            ],
+            "alt": "negocio_gas_diaz",
+            "telefono":"919462045"
+          },
+          {
+            "id": 31,
+            "categoria": "Otros",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746570/condominios/hidad3h5zhzvfthsrxmj.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746570/condominios/deknulngs1meckswfx8u.jpg"
+            ],
+            "alt": "negocio_barber_asikalate",
+            "telefono":"919462045"
+          },
+          {
+            "id": 32,
+            "categoria": "Comida",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746570/condominios/rfv59q2mgrxjyfefxy5v.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746570/condominios/vqvaxriwkzhsdulautib.jpg"
+            ],
+            "alt": "negocio_alitas_tasty",
+            "telefono":"919462045"
+          },
+          {
+            "id": 33,
+            "categoria": "Comida",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746569/condominios/qztrcvu7swut0xalegz9.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746569/condominios/x1c6o8udosxwh8jr1gsc.jpg"
+            ],
+            "alt": "negocio_full_sanguchon",
+            "telefono":"919462045"
+          },
+          {
+            "id": 34,
+            "categoria": "Otros",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746569/condominios/u7lgmae6frltemggdatx.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746569/condominios/gmn4b5shohxitdxakour.jpg"
+            ],
+            "alt": "negocio_iglesia_jehova",
+            "telefono":"919462045"
+          }
     ]
 }
