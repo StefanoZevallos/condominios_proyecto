@@ -104,9 +104,9 @@ export default function Home() {
         ))}
         {showModal && (
           <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center h-screen overflow-hidden">
-          <div className="relative bg-white  rounded max-w-lg w-full h-[95%]">
+          <div className="relative bg-white  rounded max-w-lg w-full h-[98%] flex justify-evenly flex-col">
             <div className=' flex justify-end'>
-            <button onClick={closeModal} className="font-bold text-lg text-red-500  bg-white  bg-gray-300 px-2 py-1 rounded">
+            <button onClick={closeModal} className="font-bold text-xl text-red-500  bg-white  bg-gray-400 px-2 py-1 rounded">
               Cerrar
             </button>
             </div>
@@ -115,9 +115,9 @@ export default function Home() {
                 <Zoom >
                 <Slider key={negocio.id} {...settings} className="w-[100%] mb-8 flex justify-center items-center">
                   {negocio.imagenes_negocio.map((imagen, index) => (
-                    <Zoom key={index}>
+                    <Zoom>
                       <Negocio key={index} alt={negocio.alt} foto_negocio_url={imagen} />
-                    </Zoom>
+                      </Zoom>
                   ))}
                 </Slider>
                 </Zoom>
