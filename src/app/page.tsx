@@ -20,16 +20,16 @@ export default function Home() {
   const [datos_negocioPopUp, setDatosNegocioPopUp] = useState(datos_negocios_home)
   const [showModal, setShowModal] = useState(false);
 
-  useEffect(() => {
-    if (showModal) {
-      document.body.style.overflow = 'hidden'; // Deshabilita el scroll
-    } else {
-      document.body.style.overflow = 'auto'; // Habilita el scroll
-    }
-    return () => {
-      document.body.style.overflow = 'auto'; // Asegúrate de restaurar el estado al desmontar
-    };
-  }, [showModal]);
+  // useEffect(() => {
+  //   if (showModal) {
+  //     document.body.style.overflow = 'hidden'; // Deshabilita el scroll
+  //   } else {
+  //     document.body.style.overflow = 'auto'; // Habilita el scroll
+  //   }
+  //   return () => {
+  //     document.body.style.overflow = 'auto'; // Asegúrate de restaurar el estado al desmontar
+  //   };
+  // }, [showModal]);
 
 
   const funcionFiltrado = (categoria: any) => {
@@ -114,14 +114,14 @@ export default function Home() {
         ))}
         {/* MODAL */}
         {showModal && (
-          <div className="bg-black bg-opacity-70 flex justify-center items-center h-screen w-full"> {/* Fondo oscuro normal */}
-          <div className="relative bg-white rounded max-w-lg w-full h-auto flex flex-col p-4"> {/* Modal flexible */}
+          <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center h-screen w-full"> 
+          <div className="relative bg-white rounded max-w-lg w-full h-auto flex flex-col "> 
             <div className='flex justify-end'>
               <button onClick={closeModal} className="font-bold text-xl text-red-500 bg-white bg-gray-400 px-2 py-1 rounded">
                 Cerrar
               </button>
             </div>
-            <div className='mt-2 flex-grow overflow-auto'> {/* Permite el desplazamiento interno */}
+            <div > 
               {datos_negocioPopUp.map((negocio) => (
                 <Slider key={negocio.id} {...settings} className="w-full mb-8 flex justify-center items-center">
                   {negocio.imagenes_negocio.map((imagen, index) => (
@@ -132,7 +132,7 @@ export default function Home() {
                 </Slider>
               ))}
             </div>
-            <div className="flex justify-center mt-4">
+            <div className="flex justify-center ">
               {datos_negocioPopUp.map((negocio) => (
                 <a key={negocio.id} href={`https://wa.me/${negocio.telefono}?text=Hola Estoy interesado en ...`} target="_blank" rel="noopener noreferrer">
                   <button className="bg-green-500 text-white py-2 px-4 rounded">WhatsApp</button>
