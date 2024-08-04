@@ -102,7 +102,7 @@ export default function Home() {
         ))}
         {showModal && (
           <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center h-screen overflow-hidden">
-          <div className="relative bg-white p-2 rounded max-w-lg w-full">
+          <div className="relative bg-white p-2 rounded max-w-lg w-full h-[95%]">
             <div className=' flex justify-end'>
             <button onClick={closeModal} className="font-bold text-lg text-red-500  bg-white  bg-gray-300 px-2 py-1 rounded">
               Cerrar
