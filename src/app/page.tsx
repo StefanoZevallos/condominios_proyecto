@@ -18,7 +18,8 @@ export default function Home() {
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1721096393/condominios/ccnvwfuxlyl7by68piyp.jpg",
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719545884/condominios/gc1bs91ahdkxnng74cz3.jpg"
         ],
-        alt: "negocio_machis"
+        alt: "negocio_machis",
+        telefono:"919462045"
       },
       {
         id: 2,
@@ -27,7 +28,8 @@ export default function Home() {
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695346/condominios/db0jiz5grjh0ubhdgxpa.jpg",
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695346/condominios/mariq6nftyx9myhnqtyh.jpg"
         ],
-        alt: "negocio_agua"
+        alt: "negocio_agua_alcalina",
+         telefono:"944255859"
       },
       {
         id: 3,
@@ -36,7 +38,8 @@ export default function Home() {
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695346/condominios/fncgs30llmtkghwm7ely.jpg",
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695346/condominios/fqjxktteks7wqrksyevy.jpg"
         ],
-        alt: "negocio_agua"
+        alt: "negocio_agua_agualand",
+         telefono:"906359736"
       },
       {
         id: 4,
@@ -45,7 +48,8 @@ export default function Home() {
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695346/condominios/lc3mxb0dwvwhgerawnth.jpg",
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695347/condominios/ce6ywhukoiigwtyw7n3u.jpg"
         ],
-        alt: "negocio_comida"
+        alt: "negocio_comida_antojos_micaela",
+         telefono:"955548263"
       },
       {
         id: 6,
@@ -54,7 +58,8 @@ export default function Home() {
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695347/condominios/vjk0ecb6jrlpv0tqbkgc.jpg",
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695348/condominios/eot699ksdu46yvapg7vb.jpg"
         ],
-        alt: "negocio_cama_spazzio"
+        alt: "negocio_cama_spazzio",
+         telefono:"978617972"
       },
       {
         id: 7,
@@ -63,7 +68,8 @@ export default function Home() {
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695347/condominios/p3ohgukdr210peg7gzxg.jpg",
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695347/condominios/fcjhzkpc5entnfs9pczp.jpg"
         ],
-        alt: "negocio_cortinas"
+        alt: "negocio_cortinas_innova_deccor",
+         telefono:"935620574"
       },
       {
         id: 8,
@@ -72,7 +78,8 @@ export default function Home() {
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695366/condominios/qdlvanvnvoakj85mmupr.jpg",
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695388/condominios/ebnjd11tdyasoqj231mp.jpg"
         ],
-        alt: "negocio_gas"
+        alt: "negocio_gas_dania_gas",
+         telefono:"943134918"
       },
       {
         id: 9,
@@ -81,7 +88,8 @@ export default function Home() {
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695417/condominios/eg4jq7lei5tglrmnixnu.jpg",
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695417/condominios/lnnnifrdt4ktvn33llc7.jpg"
         ],
-        alt: "negocio_comida_burger_dotti"
+        alt: "negocio_comida_burger_dotti",
+         telefono:"924944312"
       },
       {
         id: 10,
@@ -90,7 +98,8 @@ export default function Home() {
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695418/condominios/yvh0wrtqzuyn8mpeu4wd.jpg",
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695418/condominios/f2q1wfy8jlkqnkixvl9p.jpg"
         ],
-        alt: "negocio_comida_finas_brasas"
+        alt: "negocio_comida_finas_brasas",
+         telefono:"918042497"
       },
       {
         id: 11,
@@ -99,7 +108,8 @@ export default function Home() {
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695417/condominios/ktgzvkinq1wmu3xsmspm.jpg",
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695417/condominios/ktgzvkinq1wmu3xsmspm.jpg"
         ],
-        alt: "negocio_electrodomesticos"
+        alt: "negocio_electrodomesticos",
+         telefono:"946719400"
       },
       {
         id: 12,
@@ -108,7 +118,8 @@ export default function Home() {
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695418/condominios/tjx0ruxu5qbvfyxpcroq.jpg",
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695419/condominios/byxf9zvooh2uff8tjg9f.jpg"
         ],
-        alt: "negocio_gas"
+        alt: "negocio_gas_eden",
+         telefono:"953079324"
       },
       {
         id: 13,
@@ -117,7 +128,8 @@ export default function Home() {
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695419/condominios/sbcoailkszhqpi2uenco.jpg",
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695419/condominios/igwupi8alrzay3f6k9p0.jpg"
         ],
-        alt: "negocio_melamine"
+        alt: "negocio_melamine_mundo_melamine",
+         telefono:"989874381"
       },
       {
         id: 14,
@@ -126,7 +138,8 @@ export default function Home() {
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695419/condominios/ygqqsdomtf2vn0xekh7r.jpg",
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695420/condominios/y2hsxltor7k6mkdeeq75.jpg"
         ],
-        alt: "negocio_comida"
+        alt: "negocio_comida",
+         telefono:"972008860"
       },
       {
         id: 15,
@@ -135,7 +148,8 @@ export default function Home() {
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695420/condominios/wms2fmtsbt8azfejyk66.jpg",
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695420/condominios/gdvhevbsz4d1qptvkakq.jpg"
         ],
-        alt: "negocio_brau_lions"
+        alt: "negocio_brau_lions",
+         telefono:"946750678"
       },
       {
         id: 16,
@@ -144,7 +158,8 @@ export default function Home() {
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695420/condominios/vqxwyupyyyjy9g4lznjf.jpg",
           "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695420/condominios/l2xgxliuivooxmmtqnr7.jpg"
         ],
-        alt: "negocio_the_new_home"
+        alt: "negocio_the_new_home",
+        telefono:"961254320"
       },
     ]
   };
@@ -252,9 +267,11 @@ export default function Home() {
               ))}
             </div>
             <div className="flex justify-center mt-4">
-              <a href={`https://wa.me/?text=Estoy interesado en `} target="_blank" rel="noopener noreferrer">
-                <button className="bg-green-500 text-white py-2 px-4 rounded">WhatsApp</button>
-              </a>
+            {datos_negocioPopUp.map((negocio) => (
+                  <a href={`https://wa.me/${negocio.telefono}?text=Hola Estoy interesado en ...`} target="_blank" rel="noopener noreferrer">
+                  <button className="bg-green-500 text-white py-2 px-4 rounded">WhatsApp</button>
+                </a>
+              ))}
             </div>
           </div>
         </div>
