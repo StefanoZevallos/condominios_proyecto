@@ -115,7 +115,7 @@ export default function Home() {
         {/* MODAL */}
         {showModal && (
           <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center overflow-auto">
-            <div className="bg-white rounded max-w-lg w-full h-auto flex flex-col ">
+            <div className="bg-white rounded  w-full h-[95%] flex flex-col ">
               <div className='flex justify-end'>
                 <button onClick={closeModal} className="font-bold text-xl text-red-500 bg-white bg-gray-400 px-2 py-1 rounded">
                   Cerrar
@@ -132,7 +132,7 @@ export default function Home() {
                   </Slider>
                 ))}
               </div>
-              <div className="flex justify-center mt-4">
+              <div className="flex justify-center">
                 {datos_negocioPopUp.map((negocio) => (
                   <a key={negocio.id} href={`https://wa.me/${negocio.telefono}?text=Hola Estoy interesado en ...`} target="_blank" rel="noopener noreferrer">
                     <button className="bg-green-500 text-white py-2 px-4 rounded">WhatsApp</button>
