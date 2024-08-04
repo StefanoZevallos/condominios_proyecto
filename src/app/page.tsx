@@ -38,7 +38,7 @@ export default function Home() {
     setCategoriaSeleccionada(categoria);
   };
 
-  const handleImageClick = (index:any) => {
+  const handleImageClick = (index: any) => {
     const datosFiltradosPopUp = datos_originales_estatico.filter((dato) => dato.id === index);
     setDatosNegocioPopUp(datosFiltradosPopUp);
     setShowModal(true);
@@ -102,7 +102,6 @@ export default function Home() {
           <p className='w-24 lg:w-[140px] font-semibold'> Otros </p>
         </button>
       </section>
-      {/* div de abjo tiene negocios_container como clase se borro */}
       <div className={styles.negocios_container}>
         {datos_negocio.map((negocio) => (
           <Slider key={negocio.id} {...settings} className='w-[100%] mb-8 flex justify-center items-center'>
@@ -113,34 +112,35 @@ export default function Home() {
             ))}
           </Slider>
         ))}
+        {/* MODAL */}
         {showModal && (
-         <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center h-screen overflow-hidden">
-  <div className="relative bg-white rounded max-w-lg w-full h-[95%] flex flex-col">
-    <div className='flex justify-end'>
-      <button onClick={closeModal} className="font-bold text-xl text-red-500 bg-white bg-gray-400 px-2 py-1 rounded">
-        Cerrar
-      </button>
-    </div>
-    <div className='mt-2 flex-grow overflow-auto'> {/* Permite el desplazamiento interno */}
-      {datos_negocioPopUp.map((negocio) => (
-        <Slider key={negocio.id} {...settings} className="w-full mb-8 flex justify-center items-center">
-          {negocio.imagenes_negocio.map((imagen, index) => (
-            <Zoom key={index}>
-              <Negocio alt={negocio.alt} foto_negocio_url={imagen} />
-            </Zoom>
-          ))}
-        </Slider>
-      ))}
-    </div>
-    {/* <div className="flex justify-center">
-      {datos_negocioPopUp.map((negocio) => (
-        <a key={negocio.id} href={`https://wa.me/${negocio.telefono}?text=Hola Estoy interesado en ...`} target="_blank" rel="noopener noreferrer">
-          <button className="bg-green-500 text-white py-2 px-4 rounded">WhatsApp</button>
-        </a>
-      ))}
-    </div> */}
-  </div>
-</div>
+          <div className="bg-black bg-opacity-70 flex justify-center items-center h-screen w-full"> {/* Fondo oscuro normal */}
+          <div className="relative bg-white rounded max-w-lg w-full h-auto flex flex-col p-4"> {/* Modal flexible */}
+            <div className='flex justify-end'>
+              <button onClick={closeModal} className="font-bold text-xl text-red-500 bg-white bg-gray-400 px-2 py-1 rounded">
+                Cerrar
+              </button>
+            </div>
+            <div className='mt-2 flex-grow overflow-auto'> {/* Permite el desplazamiento interno */}
+              {datos_negocioPopUp.map((negocio) => (
+                <Slider key={negocio.id} {...settings} className="w-full mb-8 flex justify-center items-center">
+                  {negocio.imagenes_negocio.map((imagen, index) => (
+                    <Zoom key={index}>
+                      <Negocio alt={negocio.alt} foto_negocio_url={imagen} />
+                    </Zoom>
+                  ))}
+                </Slider>
+              ))}
+            </div>
+            <div className="flex justify-center mt-4">
+              {datos_negocioPopUp.map((negocio) => (
+                <a key={negocio.id} href={`https://wa.me/${negocio.telefono}?text=Hola Estoy interesado en ...`} target="_blank" rel="noopener noreferrer">
+                  <button className="bg-green-500 text-white py-2 px-4 rounded">WhatsApp</button>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
         )}
       </div>
 
