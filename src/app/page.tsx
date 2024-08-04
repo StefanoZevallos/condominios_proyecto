@@ -248,7 +248,7 @@ export default function Home() {
           </Slider>
         ))}
         {showModal && (
-          <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center">
+          <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center h-[100%]">
           <div className="relative bg-white p-2 rounded max-w-lg w-full">
             <div className=' flex justify-end'>
             <button onClick={closeModal} className="font-bold text-red-500  bg-white  bg-gray-300 px-2 py-1 rounded">
