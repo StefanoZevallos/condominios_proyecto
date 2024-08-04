@@ -167,8 +167,6 @@ export default function Home() {
     const datosFiltradosPopUp = datos_originales_estatico.filter((dato) => dato.id === index);
     setDatosNegocioPopUp(datosFiltradosPopUp);
     setShowModal(true);
-    console.log(datos_negocioPopUp);
-    
   };
 
   const closeModal = () => {
@@ -235,12 +233,14 @@ export default function Home() {
           </Slider>
         ))}
         {showModal && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-          <div className="relative bg-white p-4 rounded max-w-lg w-full">
-            <button onClick={closeModal} className="absolute top-2 right-2 text-red-500 z-50 bg-white bg-opacity-80 px-2 py-1 rounded">
+          <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center">
+          <div className="relative bg-white p-2 rounded max-w-lg w-full">
+            <div className=' flex justify-end'>
+            <button onClick={closeModal} className="font-bold text-red-500  bg-white  bg-gray-300 px-2 py-1 rounded">
               Cerrar
             </button>
-            <div className="mb-4">
+            </div>
+            <div className='mt-2'>
               {datos_negocioPopUp.map((negocio) => (
                 <Slider key={negocio.id} {...settings} className="w-[100%] mb-8 flex justify-center items-center">
                   {negocio.imagenes_negocio.map((imagen, index) => (
