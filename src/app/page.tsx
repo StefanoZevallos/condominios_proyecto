@@ -114,35 +114,35 @@ export default function Home() {
         ))}
         {/* MODAL */}
         {showModal && (
-           <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center">
-           <div className="bg-white rounded-lg w-full max-w-screen-md h-[95%] flex flex-col overflow-hidden">
-             <div className='flex justify-end p-2'>
-               <button onClick={closeModal} className="font-bold text-xl text-red-500 px-2 py-1">
-                 Cerrar
-               </button>
-             </div>
-             <div className="flex-grow flex flex-col justify-center items-center overflow-hidden">
-               {datos_negocioPopUp.map((negocio) => (
-                 <Slider key={negocio.id} {...settings} className="w-full mb-8 flex justify-center items-center">
-                   {negocio.imagenes_negocio.map((imagen, index) => (
-                     <Zoom key={index}>
-                       <Negocio alt={negocio.alt} foto_negocio_url={imagen} />
-                     </Zoom>
-                   ))}
-                 </Slider>
-               ))}
-             </div>
-             <div className="flex justify-center p-4">
-               {datos_negocioPopUp.map((negocio) => (
-                 <a key={negocio.id} href={`https://wa.me/${negocio.telefono}?text=Hola Estoy interesado en ...`} target="_blank" rel="noopener noreferrer">
-                   <button className="bg-green-500 text-white py-2 px-4 rounded">
-                     WhatsApp
-                   </button>
-                 </a>
-               ))}
-             </div>
-           </div>
-         </div>
+            <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center">
+            <div className="bg-white rounded-lg w-full max-w-screen-md h-[95%] flex flex-col overflow-hidden">
+              <div className='flex justify-end p-2'>
+                <button onClick={closeModal} className="font-bold text-xl text-red-500 px-2 py-1">
+                  Cerrar
+                </button>
+              </div>
+              <div className="flex-grow flex flex-col justify-center items-center overflow-hidden">
+                {datos_negocioPopUp.map((negocio) => (
+                  <Slider key={negocio.id} {...settings} className="w-full mb-8 flex justify-center items-center">
+                    {negocio.imagenes_negocio.map((imagen, index) => (
+                      <Zoom key={index}>
+                        <Negocio alt={negocio.alt} foto_negocio_url={imagen} />
+                      </Zoom>
+                    ))}
+                  </Slider>
+                ))}
+              </div>
+              <div className="flex justify-center p-4 text-lg font-bold">
+                {datos_negocioPopUp.map((negocio) => (
+                  <a key={negocio.id} href={`https://wa.me/${negocio.telefono}?text=Hola Estoy interesado en ...`} target="_blank" rel="noopener noreferrer">
+                    <button className="bg-green-500 text-white py-2 px-4 rounded">
+                      WhatsApp
+                    </button>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
         )}
       </div>
 
