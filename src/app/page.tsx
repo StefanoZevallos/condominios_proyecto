@@ -112,7 +112,6 @@ export default function Home() {
             </div>
             <div className='mt-2'>
               {datos_negocioPopUp.map((negocio) => (
-                <Zoom >
                 <Slider key={negocio.id} {...settings} className="w-[100%] mb-8 flex justify-center items-center">
                   {negocio.imagenes_negocio.map((imagen, index) => (
                     <Zoom key={index}>
@@ -120,7 +119,6 @@ export default function Home() {
                       </Zoom>
                   ))}
                 </Slider>
-                </Zoom>
               ))}
             </div>
             <div className="flex justify-center mt-4">
