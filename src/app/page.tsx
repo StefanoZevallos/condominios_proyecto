@@ -9,6 +9,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import 'react-medium-image-zoom/dist/styles.css';
 
 export default function Home() {
 
@@ -113,11 +114,9 @@ export default function Home() {
               {datos_negocioPopUp.map((negocio) => (
                 <Slider key={negocio.id} {...settings} className="w-[100%] mb-8 flex justify-center items-center">
                   {negocio.imagenes_negocio.map((imagen, index) => (
-                
-                      <Zoom key={index}> 
+                    <Zoom key={index}>
                       <Negocio key={index} alt={negocio.alt} foto_negocio_url={imagen} />
-                      </Zoom>
-      
+                    </Zoom>
                   ))}
                 </Slider>
               ))}
