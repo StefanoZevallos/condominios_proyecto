@@ -161,6 +161,186 @@ export default function Home() {
         alt: "negocio_the_new_home",
         telefono:"961254320"
       },
+      {
+        id: 17,
+        categoria: "Hogar",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743128/condominios/pfdjk3aujhcezsohuleh.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743128/condominios/ojufuohcchzc5bypfafj.jpg"
+        ],
+        alt: "negocio_insure",
+        telefono:"919462045"
+      },
+      {
+        id: 18,
+        categoria: "Comida",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743128/condominios/wsoe1pkt1nunewcuoyux.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743128/condominios/md7evalvo1ufte218aop.jpg"
+        ],
+        alt: "negocio_pollo_julys",
+        telefono:"919462045"
+      },
+      {
+        id: 19,
+        categoria: "Comida",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743130/condominios/jwlq3845qxytnmafl6lm.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743130/condominios/hmjx5kqfoxqxnkko5xpb.jpg"
+        ],
+        alt: "negocio_pollo_tyagos",
+        telefono:"919462045"
+      },
+      {
+        id: 20,
+        categoria: "Comida",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743130/condominios/yvs6gxopnve8znp1tpgu.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743130/condominios/hmjx5kqfoxqxnkko5xpb.jpg"
+        ],
+        alt: "negocio_pollo_solano",
+        telefono:"919462045"
+      },
+      {
+        id: 21,
+        categoria: "Comida",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743130/condominios/d38slmv6rcvfhdxsjox6.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743130/condominios/umkw6m5w5iaumpxbydgo.jpg"
+        ],
+        alt: "negocio_alitas_wings",
+        telefono:"919462045"
+      },
+      {
+        id: 22,
+        categoria: "Comida",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743130/condominios/rxrsmgip0vmd82lwdhdz.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743130/condominios/xaqbmdlcm9m0eorjwevp.jpg"
+        ],
+        alt: "negocio_alitas_gios",
+        telefono:"919462045"
+      },
+      {
+        id: 23,
+        categoria: "Comida",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743129/condominios/zjd4oralqhj5tzleclwp.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743129/condominios/nj4dmyvhc7sfsswownnn.jpg"
+        ],
+        alt: "negocio_alitas_miramar",
+        telefono:"919462045"
+      },
+      {
+        id: 24,
+        categoria: "Otros",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743129/condominios/wyyup9tpsmdaltlfgzrt.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743129/condominios/wyyup9tpsmdaltlfgzrt.jpg"
+        ],
+        alt: "negocio_romas_spa",
+        telefono:"919462045"
+      },
+      {
+        id: 25,
+        categoria: "Gas",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743129/condominios/x6u7dgmuet82pzgfez0h.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743129/condominios/qwuubi2eylufhonm1o8b.jpg"
+        ],
+        alt: "negocio_mahya_gas",
+        telefono:"919462045"
+      },
+      {
+        id: 26,
+        categoria: "Hogar",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743129/condominios/yatpgecagvdojs2xxcqb.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743128/condominios/gebcshob8vj5uwdh06hx.jpg"
+        ],
+        alt: "negocio_mudanzas",
+        telefono:"919462045"
+      },
+      {
+        id: 27,
+        categoria: "Gas",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743129/condominios/zhfdn45aabyaaawcu3c5.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743129/condominios/nntvrzq5imznheqzehmv.jpg"
+        ],
+        alt: "negocio_gas_dairon",
+        telefono:"919462045"
+      },
+      {
+        id: 28,
+        categoria: "Otros",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746570/condominios/usensyivyjudg20y5kqw.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746761/condominios/osrbov3ho2tfsh4e4ip9.jpg"
+        ],
+        alt: "negocio_gas_dairon",
+        telefono:"919462045"
+      },
+      {
+        id: 29,
+        categoria: "Gas",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746570/condominios/orfuftizndukao7dqknx.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746570/condominios/idqakduh7pltx7iye73a.jpg"
+        ],
+        alt: "negocio_gas_diaz",
+        telefono:"919462045"
+      },
+      {
+        id: 30,
+        categoria: "Gas",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746570/condominios/idqakduh7pltx7iye73a.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746570/condominios/orfuftizndukao7dqknx.jpg"
+        ],
+        alt: "negocio_gas_diaz",
+        telefono:"919462045"
+      },
+      {
+        id: 31,
+        categoria: "Otros",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746570/condominios/hidad3h5zhzvfthsrxmj.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746570/condominios/deknulngs1meckswfx8u.jpg"
+        ],
+        alt: "negocio_barber_asikalate",
+        telefono:"919462045"
+      },
+      {
+        id: 32,
+        categoria: "Comida",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746570/condominios/vqvaxriwkzhsdulautib.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746570/condominios/deknulngs1meckswfx8u.jpg"
+        ],
+        alt: "negocio_alitas_tasty",
+        telefono:"919462045"
+      },
+      {
+        id: 33,
+        categoria: "Comida",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746569/condominios/qztrcvu7swut0xalegz9.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746569/condominios/x1c6o8udosxwh8jr1gsc.jpg"
+        ],
+        alt: "negocio_full_sanguchon",
+        telefono:"919462045"
+      },
+      {
+        id: 34,
+        categoria: "Otros",
+        imagenes_negocio: [
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746569/condominios/u7lgmae6frltemggdatx.jpg",
+          "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746569/condominios/gmn4b5shohxitdxakour.jpg"
+        ],
+        alt: "negocio_iglesia_jehova",
+        telefono:"919462045"
+      },
     ]
   };
 
@@ -234,6 +414,12 @@ export default function Home() {
           onClick={() => funcionFiltrado("Agua")}
         >
           <p className='w-24 lg:w-[140px] font-semibold'> Agua </p>
+        </button>
+        <button
+          className={`h-10 rounded-full text-center ${categoriaSeleccionada === "Otros" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          onClick={() => funcionFiltrado("Otros")}
+        >
+          <p className='w-24 lg:w-[140px] font-semibold'> Otros </p>
         </button>
       </section>
       {/* div de abjo tiene negocios_container como clase se borro */}
