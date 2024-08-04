@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import styles from "@/app/styles/nav.module.css";
 import Negocio from "@/app/components/Negocio"
 import datosNegocio from "@/app/data_negocios/data_negocios_.json"
+import Zoom from 'react-medium-image-zoom';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import "slick-carousel/slick/slick.css";
@@ -102,7 +103,7 @@ export default function Home() {
         ))}
         {showModal && (
           <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center h-screen overflow-hidden">
-          <div className="relative bg-white p-2 rounded max-w-lg w-full h-[95%]">
+          <div className="relative bg-white  rounded max-w-lg w-full h-[95%]">
             <div className=' flex justify-end'>
             <button onClick={closeModal} className="font-bold text-lg text-red-500  bg-white  bg-gray-300 px-2 py-1 rounded">
               Cerrar
@@ -113,7 +114,9 @@ export default function Home() {
                 <Slider key={negocio.id} {...settings} className="w-[100%] mb-8 flex justify-center items-center">
                   {negocio.imagenes_negocio.map((imagen, index) => (
                     <div key={index}>
+                      <Zoom>
                       <Negocio key={index} alt={negocio.alt} foto_negocio_url={imagen} />
+                      </Zoom>
                     </div>
                   ))}
                 </Slider>
