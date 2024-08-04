@@ -31,7 +31,6 @@ export default function Home() {
     };
   }, [showModal]);
 
-  if (!showModal) return null;
 
   const funcionFiltrado = (categoria: any) => {
     const datosFiltrados = datos_originales_estatico.filter((dato) => dato.categoria === categoria);
