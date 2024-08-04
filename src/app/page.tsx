@@ -268,7 +268,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center mt-4">
             {datos_negocioPopUp.map((negocio) => (
-                  <a href={`https://wa.me/${negocio.telefono}?text=Hola Estoy interesado en ...`} target="_blank" rel="noopener noreferrer">
+                  <a  key={negocio.id} href={`https://wa.me/${negocio.telefono}?text=Hola Estoy interesado en ...`} target="_blank" rel="noopener noreferrer">
                   <button className="bg-green-500 text-white py-2 px-4 rounded">WhatsApp</button>
                 </a>
               ))}
