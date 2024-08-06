@@ -8,7 +8,8 @@
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719545884/condominios/gc1bs91ahdkxnng74cz3.jpg"
             ],
             "alt": "negocio_machis",
-            "telefono":"919462045"
+            "telefono":"919462045",
+            "subcategoria":"Pollo a la Brasa"
           },
           {
             "id": 2,
@@ -38,6 +39,7 @@
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695347/condominios/ce6ywhukoiigwtyw7n3u.jpg"
             ],
             "alt": "negocio_comida_antojos_micaela",
+            "subcategoria":"Snacks",
              "telefono":"955548263"
           },
           {
@@ -78,6 +80,7 @@
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695417/condominios/lnnnifrdt4ktvn33llc7.jpg"
             ],
             "alt": "negocio_comida_burger_dotti",
+            "subcategoria":"Hamburguesas",
              "telefono":"924944312"
           },
           {
@@ -88,7 +91,8 @@
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695418/condominios/f2q1wfy8jlkqnkixvl9p.jpg"
             ],
             "alt": "negocio_comida_finas_brasas",
-             "telefono":"918042497"
+             "telefono":"918042497",
+             "subcategoria":"Pollo a la Brasa"
           },
           {
             "id": 11,
@@ -127,7 +131,8 @@
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695419/condominios/ygqqsdomtf2vn0xekh7r.jpg",
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1719695420/condominios/y2hsxltor7k6mkdeeq75.jpg"
             ],
-            "alt": "negocio_comida",
+            "alt": "negocio_pollos_mazuro",
+            "subcategoria":"Pollo a la Brasa",
              "telefono":"972008860"
           },
           {
@@ -168,6 +173,7 @@
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743128/condominios/md7evalvo1ufte218aop.jpg"
             ],
             "alt": "negocio_pollo_julys",
+            "subcategoria":"Pollo a la Brasa",
             "telefono":"919462045"
           },
           {
@@ -178,6 +184,7 @@
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743130/condominios/hmjx5kqfoxqxnkko5xpb.jpg"
             ],
             "alt": "negocio_pollo_tyagos",
+            "subcategoria":"Pollo a la Brasa",
             "telefono":"919462045"
           },
           {
@@ -188,6 +195,7 @@
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743130/condominios/hmjx5kqfoxqxnkko5xpb.jpg"
             ],
             "alt": "negocio_pollo_solano",
+            "subcategoria":"Pollo a la Brasa",
             "telefono":"919462045"
           },
           {
@@ -198,6 +206,7 @@
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743130/condominios/umkw6m5w5iaumpxbydgo.jpg"
             ],
             "alt": "negocio_alitas_wings",
+            "subcategoria":"Alitas",
             "telefono":"919462045"
           },
           {
@@ -207,7 +216,8 @@
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743130/condominios/rxrsmgip0vmd82lwdhdz.jpg",
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743130/condominios/xaqbmdlcm9m0eorjwevp.jpg"
             ],
-            "alt": "negocio_alitas_gios",
+            "alt": "negocio_gios",
+            "subcategoria":"Alitas",
             "telefono":"919462045"
           },
           {
@@ -217,7 +227,8 @@
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743129/condominios/zjd4oralqhj5tzleclwp.jpg",
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722743129/condominios/nj4dmyvhc7sfsswownnn.jpg"
             ],
-            "alt": "negocio_alitas_miramar",
+            "alt": "negocio_miramar",
+            "subcategoria":"Marino",
             "telefono":"919462045"
           },
           {
@@ -298,6 +309,7 @@
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746570/condominios/vqvaxriwkzhsdulautib.jpg"
             ],
             "alt": "negocio_alitas_tasty",
+            "subcategoria":"Alitas",
             "telefono":"919462045"
           },
           {
@@ -308,6 +320,7 @@
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746569/condominios/x1c6o8udosxwh8jr1gsc.jpg"
             ],
             "alt": "negocio_full_sanguchon",
+            "subcategoria":"Hamburguesas",
             "telefono":"919462045"
           },
           {

@@ -14,12 +14,13 @@ import 'react-medium-image-zoom/dist/styles.css';
 export default function Home() {
 
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("Comida");
+  const [subCategoriaSeleccionada,setSubCategoriaSeleccionada] = useState("Alitas")
   const [datos_originales_estatico] = useState(datosNegocio.data_negocios);
   const datos_negocios_home = datos_originales_estatico.filter((dato) => dato.categoria === "Comida")
   const [datos_negocio, setDatosNegocio] = useState(datos_negocios_home)
   const [datos_negocioPopUp, setDatosNegocioPopUp] = useState(datos_negocios_home)
   const [showModal, setShowModal] = useState(false);
-  const [subCategoria,setSubCategoria] = useState(false)
+  const [subCategoria,setSubCategoria] = useState(true)
 
   useEffect(() => {
     if (showModal) {
@@ -38,7 +39,6 @@ export default function Home() {
     const datosFiltrados = datos_originales_estatico.filter((dato) => dato.categoria === categoria);
     setDatosNegocio(datosFiltrados)
     setCategoriaSeleccionada(categoria);
-    setSubCategoria(true)
   };
 
   const handleImageClick = (index: any) => {
@@ -46,6 +46,13 @@ export default function Home() {
     setDatosNegocioPopUp(datosFiltradosPopUp);
     setShowModal(true);
   };
+
+  const clickSubcategoria = (subcategoria:any) => { 
+    const datosSubcategoria = datos_originales_estatico.filter((dato)=> dato.subcategoria === subcategoria)
+    setDatosNegocio(datosSubcategoria)
+    setSubCategoriaSeleccionada(subcategoria);
+
+  }
 
   const closeModal = () => {
     setShowModal(false);
@@ -111,19 +118,34 @@ export default function Home() {
           <p className='font-semibold text-sm ml-2 mt-[3px]'> Subcategorias:</p>
           <section className='ml-2 h-12 mb-2 flex  items-center overflow-x-auto space-x-2 '>
             <button
-              className={`h-10 rounded-full text-center text-sm ${categoriaSeleccionada === "Otros" ? 'bg-orange-600' : 'bg-blue-500'}`}
-            >
-              <p className='w-24 lg:w-[140px] font-semibold'> Pollo a la Brasa </p>
-            </button>
-            <button
-              className={`h-10 rounded-full text-center text-sm ${categoriaSeleccionada === "Otros" ? 'bg-orange-600' : 'bg-blue-500'}`}
-            >
-              <p className='w-24 lg:w-[140px] font-semibold'>Pizza </p>
-            </button>
-            <button
-              className={`h-10 rounded-full text-center text-sm ${categoriaSeleccionada === "Otros" ? 'bg-orange-600' : 'bg-blue-500'}`}
+              className={`h-10 rounded-full text-center text-sm ${subCategoriaSeleccionada === "Alitas" ? 'bg-orange-600' : 'bg-blue-500'}`}
+              onClick={()=> clickSubcategoria("Alitas")}
             >
               <p className='w-24 lg:w-[140px] font-semibold'> Alitas </p>
+            </button>
+            <button
+              className={`h-10 rounded-full text-center text-sm ${subCategoriaSeleccionada === "Pollo a la Brasa" ? 'bg-orange-600' : 'bg-blue-500'}`}
+              onClick={()=> clickSubcategoria("Pollo a la Brasa")}
+            >
+              <p className='w-24 lg:w-[140px] font-semibold'>Pollo a la Brasa </p>  
+            </button >
+            <button
+              className={`h-10 rounded-full text-center text-sm ${subCategoriaSeleccionada === "Hamburguesas" ? 'bg-orange-600' : 'bg-blue-500'}`}
+              onClick={()=> clickSubcategoria("Hamburguesas")}
+            >
+              <p className='w-24 lg:w-[140px] font-semibold'> Hamburguesas </p>
+            </button>
+            <button
+              className={`h-10 rounded-full text-center text-sm ${subCategoriaSeleccionada === "Snacks" ? 'bg-orange-600' : 'bg-blue-500'}`}
+              onClick={()=> clickSubcategoria("Snacks")}
+            >
+              <p className='w-24 lg:w-[140px] font-semibold'>Snacks</p>
+            </button>
+            <button
+              className={`h-10 rounded-full text-center text-sm ${subCategoriaSeleccionada === "Snacks" ? 'bg-orange-600' : 'bg-blue-500'}`}
+              onClick={()=> clickSubcategoria("Marino")}
+            >
+              <p className='w-24 lg:w-[140px] font-semibold'>Marino</p>
             </button>
           </section>
           </>
