@@ -126,9 +126,9 @@ export default function Home() {
                 {datos_negocioPopUp.map((negocio) => (
                   <Slider key={negocio.id} {...settings} className="w-full mb-8 flex justify-center items-center">
                     {negocio.imagenes_negocio.map((imagen, index) => (
-                      <Zoom key={index}>
+                      <div key={index}>
                         <Negocio alt={negocio.alt} foto_negocio_url={imagen} />
-                      </Zoom>
+                      </div>
                     ))}
                   </Slider>
                 ))}
