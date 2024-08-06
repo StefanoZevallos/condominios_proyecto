@@ -19,6 +19,7 @@ export default function Home() {
   const [datos_negocio, setDatosNegocio] = useState(datos_negocios_home)
   const [datos_negocioPopUp, setDatosNegocioPopUp] = useState(datos_negocios_home)
   const [showModal, setShowModal] = useState(false);
+  const [subCategoria,setSubCategoria] = useState(false)
 
   useEffect(() => {
     if (showModal) {
@@ -37,6 +38,7 @@ export default function Home() {
     const datosFiltrados = datos_originales_estatico.filter((dato) => dato.categoria === categoria);
     setDatosNegocio(datosFiltrados)
     setCategoriaSeleccionada(categoria);
+    setSubCategoria(true)
   };
 
   const handleImageClick = (index: any) => {
@@ -103,6 +105,30 @@ export default function Home() {
           <p className='w-24 lg:w-[140px] font-semibold'> Otros </p>
         </button>
       </section>
+      {
+        subCategoria && (
+          <>
+          <p className='font-semibold text-sm ml-2 mt-[3px]'> Subcategorias:</p>
+          <section className='ml-2 h-12 mb-2 flex  items-center overflow-x-auto space-x-2 '>
+            <button
+              className={`h-10 rounded-full text-center text-sm ${categoriaSeleccionada === "Otros" ? 'bg-orange-600' : 'bg-blue-500'}`}
+            >
+              <p className='w-24 lg:w-[140px] font-semibold'> Pollo a la Brasa </p>
+            </button>
+            <button
+              className={`h-10 rounded-full text-center text-sm ${categoriaSeleccionada === "Otros" ? 'bg-orange-600' : 'bg-blue-500'}`}
+            >
+              <p className='w-24 lg:w-[140px] font-semibold'>Pizza </p>
+            </button>
+            <button
+              className={`h-10 rounded-full text-center text-sm ${categoriaSeleccionada === "Otros" ? 'bg-orange-600' : 'bg-blue-500'}`}
+            >
+              <p className='w-24 lg:w-[140px] font-semibold'> Alitas </p>
+            </button>
+          </section>
+          </>
+        )
+      }
       <div className={styles.negocios_container}>
         {datos_negocio.map((negocio) => (
           <Slider key={negocio.id} {...settings} className='w-[100%] mb-8 flex justify-center items-center'>
