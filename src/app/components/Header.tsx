@@ -6,7 +6,7 @@ import  Image  from 'next/image'
 const Header = () => {
   return (
     <>
-      <header className='bg-red-600 h-20 flex  items-center  w-full'>
+      <header className='bg-red-500 h-20 flex  items-center  w-full'>
       <div className='text-md font-bold cursor-pointer text-white'>
          <Link href={"/"}>
           <p className='ml-4'>Negocios </p>

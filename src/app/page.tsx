@@ -133,10 +133,10 @@ export default function Home() {
                   </Slider>
                 ))}
               </div>
-              <div className="flex justify-center p-4">
+              <div className="flex justify-center p-4 font-bold ">
                 {datos_negocioPopUp.map((negocio) => (
                   <a key={negocio.id} href={`https://wa.me/${negocio.telefono}?text=Hola Estoy interesado en ...`} target="_blank" rel="noopener noreferrer">
-                    <button className="bg-green-500 text-white py-2 px-4 rounded">
+                    <button className="bg-green-500 text-white py-2 px-6 rounded-lg">
                       WhatsApp
                     </button>
                   </a>
