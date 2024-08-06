@@ -16,7 +16,7 @@ export default function Home() {
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("Comida");
   const [subCategoriaSeleccionada,setSubCategoriaSeleccionada] = useState("Alitas")
   const [datos_originales_estatico] = useState(datosNegocio.data_negocios);
-  const datos_negocios_home = datos_originales_estatico.filter((dato) => dato.categoria === "Comida")
+  const datos_negocios_home = datos_originales_estatico.filter((dato) => dato.subcategoria === "Alitas")
   const [datos_negocio, setDatosNegocio] = useState(datos_negocios_home)
   const [datos_negocioPopUp, setDatosNegocioPopUp] = useState(datos_negocios_home)
   const [showModal, setShowModal] = useState(false);
@@ -142,7 +142,7 @@ export default function Home() {
               <p className='w-24 lg:w-[140px] font-semibold'>Snacks</p>
             </button>
             <button
-              className={`h-10 rounded-full text-center text-sm ${subCategoriaSeleccionada === "Snacks" ? 'bg-orange-600' : 'bg-blue-500'}`}
+              className={`h-10 rounded-full text-center text-sm ${subCategoriaSeleccionada === "Marino" ? 'bg-orange-600' : 'bg-blue-500'}`}
               onClick={()=> clickSubcategoria("Marino")}
             >
               <p className='w-24 lg:w-[140px] font-semibold'>Marino</p>
