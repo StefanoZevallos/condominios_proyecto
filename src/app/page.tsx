@@ -83,7 +83,7 @@ export default function Home() {
       <section className='ml-2 h-12 mb-2 flex  items-center overflow-x-auto space-x-2 '>
         <button
           className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => funcionFiltrado("Comida")}
+          
         >
           <p className='w-24 lg:w-[140px] font-semibold'> Comida </p>
         </button>
