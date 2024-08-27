@@ -31,9 +31,10 @@ export default function RootLayout({
           `
           }
         </Script>
-        <Script async
+        <Script id="adsense-inline-script">
+          {` async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3866346027024083"
-          crossOrigin="anonymous">
+          crossOrigin="anonymous"`}
         </Script>
       </head>
       <body className={inter.className}>
