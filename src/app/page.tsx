@@ -157,12 +157,12 @@ export default function Home() {
               <div className='flex justify-end p-2'>
                 <button
                   onClick={closeModal}
-                  className="text-xl font-bold text-red-500 rounded-full w-8 h-8  flex items-center justify-center bg-gray-200 hover:bg-gray-300"
+                  className="text-[25px] font-bold text-red-500 rounded-full w-[30px] h-[30px]  flex items-center justify-center bg-gray-200 hover:bg-gray-300"
                 >
                   X
                 </button>
               </div>
-              <div >
+              <div className='mt-1'>
                 {datos_negocioPopUp.map((negocio) => (
                   <Slider key={negocio.id} {...settings} className="w-full mb-8 flex justify-center items-center">
                     {negocio.imagenes_negocio.map((imagen, index) => (
@@ -173,10 +173,10 @@ export default function Home() {
                   </Slider>
                 ))}
               </div>
-              <div className="h-[100%] flex justify-center p-4 font-bold">
+              <div className="h-[100%] flex justify-center items-center font-bold">
                 {datos_negocioPopUp.map((negocio) => (
                   <a key={negocio.id} href={`https://wa.me/${negocio.telefono}?text=Hola Estoy interesado en ...`} target="_blank" rel="noopener noreferrer">
-                    <button className="bg-green-500 text-white py-2 px-6 rounded-lg">
+                    <button className="bg-green-500 text-white  rounded-lg w-[100px] h-[30px] ">
                       WhatsApp
                     </button>
                   </a>
