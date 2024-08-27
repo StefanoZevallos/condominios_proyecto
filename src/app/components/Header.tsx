@@ -14,12 +14,12 @@ const Header = () => {
          </Link> 
         </div>
         <div className='ml-2 w-[32px]'>
-      {/* <Image className='cursor-pointer'
-        src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1717192579/condominios/nrx5hqepfvoqeh1gazas.png"
+       <Image className='cursor-pointer'
+        src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1724725626/condominios/tfxqsthsnlkacmdip64g.webp"
         alt="Descripción de la imagen"
         width={1000}
         height={1000}
-      /> */}
+      /> 
     </div>
 
       </header>

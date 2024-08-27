@@ -126,9 +126,9 @@ export default function Home() {
           <p className='font-semibold text-sm ml-2 mt-[3px]'>Subcategorías:</p>
           <section className='ml-2 h-12 mb-2 flex items-center overflow-x-auto space-x-2'>
             {
-              subcategoria[categoriaSeleccionada].map((subcategoriaItem) => (
+              subcategoria[categoriaSeleccionada].map((subcategoriaItem,index) => (
                 <button
-                  key={subcategoriaItem}
+                  key={index}
                   className={`h-10 rounded-full text-center text-sm ${subCategoriaSeleccionada === subcategoriaItem ? 'bg-orange-600' : 'bg-blue-500'}`}
                   onClick={() => clickSubcategoria(subcategoriaItem)}
                 >
