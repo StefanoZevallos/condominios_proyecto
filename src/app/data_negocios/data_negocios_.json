@@ -282,16 +282,6 @@
             "telefono":"919462045"
           },
           {
-            "id": 29,
-            "categoria": "Gas",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746570/condominios/orfuftizndukao7dqknx.jpg",
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1722746570/condominios/idqakduh7pltx7iye73a.jpg"
-            ],
-            "alt": "negocio_gas_diaz",
-            "telefono":"919462045"
-          },
-          {
             "id": 31,
             "categoria": "Otros",
             "imagenes_negocio": [

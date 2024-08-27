@@ -23,13 +23,17 @@ export default function RootLayout({
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-PSCNZKFT11"></Script>
         <Script id='google-analytics'>
           {
-          `
+            `
            window.dataLayer = window.dataLayer || [];
            function gtag(){dataLayer.push(arguments);}
            gtag('js', new Date());
            gtag('config', 'G-PSCNZKFT11');
           `
           }
+        </Script>
+        <Script async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3866346027024083"
+          crossOrigin="anonymous">
         </Script>
       </head>
       <body className={inter.className}>
