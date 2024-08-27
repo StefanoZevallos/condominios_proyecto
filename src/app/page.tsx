@@ -157,7 +157,7 @@ export default function Home() {
               <div className='flex justify-end p-2'>
                 <button
                   onClick={closeModal}
-                  className="text-[25px] font-bold text-red-500 rounded-full w-[30px] h-[30px]  flex items-center justify-center bg-gray-200 hover:bg-gray-300"
+                  className="text-[25px] font-bold text-red-500 rounded-full w-[35px] h-[35px]  flex items-center justify-center bg-gray-200 hover:bg-gray-300"
                 >
                   X
                 </button>
