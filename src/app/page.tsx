@@ -176,7 +176,7 @@ export default function Home() {
               <div className="h-[100%] flex justify-center items-center font-bold">
                 {datos_negocioPopUp.map((negocio) => (
                   <a key={negocio.id} href={`https://wa.me/${negocio.telefono}?text=Hola Estoy interesado en ...`} target="_blank" rel="noopener noreferrer">
-                    <button className="bg-green-500 text-white  rounded-lg w-[120px] h-[50px] ">
+                    <button className="bg-green-500 text-white  rounded-lg w-[120px] h-[40px] ">
                       WhatsApp
                     </button>
                   </a>
