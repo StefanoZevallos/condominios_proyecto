@@ -13,7 +13,7 @@ import 'react-medium-image-zoom/dist/styles.css';
 
 export default function Home() {
 
-  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState<string | null>("Comida");
+  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("Comida");
   const [subCategoriaSeleccionada, setSubCategoriaSeleccionada] = useState("Alitas")
   const [datos_originales_estatico] = useState(datosNegocio.data_negocios);
   const datos_negocios_home = datos_originales_estatico.filter((dato) => dato.subcategoria === "Alitas")
@@ -25,10 +25,10 @@ export default function Home() {
 
 
   const subcategoria = {
-    "Comida": [
+    Comida: [
       "Alitas", "Pollo a la Brasa", "Hamburguesas", "Snacks", "Marino"]
     ,
-    "Hogar": [
+    Hogar: [
       "Melamine", "Seguridad", "Mudanza", "Servicios Generales"]
   }
 
@@ -121,12 +121,12 @@ export default function Home() {
           <p className='w-24 lg:w-[140px] font-semibold'> Otros </p>
         </button>
       </section>
-      {Object.keys(subcategoria).includes(categoriaSeleccionada) && subcategoria[categoriaSeleccionada]?.length > 0 && (
+      {Object.keys(subcategoria).includes(categoriaSeleccionada) && (subcategoria[categoriaSeleccionada as keyof typeof subcategoria] || []).length > 0 && (
         <>
           <p className='font-semibold text-sm ml-2 mt-[3px]'>Subcategorías:</p>
           <section className='ml-2 h-12 mb-2 flex items-center overflow-x-auto space-x-2'>
             {
-              subcategoria[categoriaSeleccionada].map((subcategoriaItem,index) => (
+              (subcategoria[categoriaSeleccionada as keyof typeof subcategoria] || []).map((subcategoriaItem, index) => (
                 <button
                   key={index}
                   className={`h-10 rounded-full text-center text-sm ${subCategoriaSeleccionada === subcategoriaItem ? 'bg-orange-600' : 'bg-blue-500'}`}
