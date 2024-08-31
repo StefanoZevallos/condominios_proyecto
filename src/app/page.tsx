@@ -14,9 +14,9 @@ import 'react-medium-image-zoom/dist/styles.css';
 export default function Home() {
 
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("Comida");
-  const [subCategoriaSeleccionada, setSubCategoriaSeleccionada] = useState("Alitas")
+  const [subCategoriaSeleccionada, setSubCategoriaSeleccionada] = useState("Todos")
   const [datos_originales_estatico] = useState(datosNegocio.data_negocios);
-  const datos_negocios_home = datos_originales_estatico.filter((dato) => dato.subcategoria === "Alitas")
+  const datos_negocios_home = datos_originales_estatico.filter((dato) => dato.subcategoria === "Todos")
   const [datos_negocio, setDatosNegocio] = useState(datos_negocios_home)
   const [datos_negocioPopUp, setDatosNegocioPopUp] = useState(datos_negocios_home)
   const [showModal, setShowModal] = useState(false);
@@ -26,10 +26,10 @@ export default function Home() {
 
   const subcategoria = {
     Comida: [
-      "Alitas", "Pollo a la Brasa", "Hamburguesas", "Snacks", "Marino"]
+      "Todos","Alitas", "Pollo a la Brasa", "Hamburguesas", "Snacks", "Marino"]
     ,
     Hogar: [
-      "Melamine", "Seguridad", "Mudanza", "Servicios Generales"]
+       "Todos","Servicios Generales","Decoraciones","Seguridad", "Mudanza"]
   }
 
   useEffect(() => {
@@ -58,8 +58,13 @@ export default function Home() {
   };
 
   const clickSubcategoria = (subcategoria: any) => {
-    const datosSubcategoria = datos_originales_estatico.filter((dato) => dato.subcategoria === subcategoria)
-    setDatosNegocio(datosSubcategoria)
+    if (subcategoria === "Todos") {
+      const datosFiltrados = datos_originales_estatico.filter((dato) => dato.categoria === categoriaSeleccionada);
+      setDatosNegocio(datosFiltrados)
+    } else {
+      const datosSubcategoria = datos_originales_estatico.filter((dato) => dato.subcategoria === subcategoria);
+      setDatosNegocio(datosSubcategoria);
+    }
     setSubCategoriaSeleccionada(subcategoria);
   }
 
@@ -91,36 +96,37 @@ export default function Home() {
       <p className='font-semibold text-md ml-2 mt-[3px]'> Categorias:</p>
       <section className='ml-2 h-12 mb-2 flex  items-center overflow-x-auto space-x-2 '>
         <button
-          className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Comida" ? 'bg-red-600' : 'bg-blue-500'}`}
+          className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => funcionFiltrado("Comida")}
         >
           <p className='w-24 lg:w-[140px] font-semibold'> Comida </p>
         </button>
         <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Gas" ? 'bg-red-600' : 'bg-blue-500'}`}
+          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Gas" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => funcionFiltrado("Gas")}
         >
           <p className='w-24 lg:w-[140px] font-semibold'> Gas </p>
         </button>
         <button
-          className={`h-10 rounded-full text-center ${categoriaSeleccionada === "Hogar" ? 'bg-red-600' : 'bg-blue-500'}`}
+          className={`h-10 rounded-full text-center ${categoriaSeleccionada === "Hogar" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => funcionFiltrado("Hogar")}
         >
           <p className='w-24 lg:w-[140px] font-semibold'> Hogar </p>
         </button>
         <button
-          className={`h-10 rounded-full text-center ${categoriaSeleccionada === "Agua" ? 'bg-red-600' : 'bg-blue-500'}`}
+          className={`h-10 rounded-full text-center ${categoriaSeleccionada === "Agua" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => funcionFiltrado("Agua")}
         >
           <p className='w-24 lg:w-[140px] font-semibold'> Agua </p>
         </button>
         <button
-          className={`h-10 rounded-full text-center ${categoriaSeleccionada === "Otros" ? 'bg-red-600' : 'bg-blue-500'}`}
+          className={`h-10 rounded-full text-center ${categoriaSeleccionada === "Otros" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => funcionFiltrado("Otros")}
         >
           <p className='w-24 lg:w-[140px] font-semibold'> Otros </p>
         </button>
       </section>
+      {/* subcategorias botones */}
       {Object.keys(subcategoria).includes(categoriaSeleccionada) && (subcategoria[categoriaSeleccionada as keyof typeof subcategoria] || []).length > 0 && (
         <>
           <p className='font-semibold text-sm ml-2 mt-[3px]'>Subcategorías:</p>
@@ -129,7 +135,7 @@ export default function Home() {
               (subcategoria[categoriaSeleccionada as keyof typeof subcategoria] || []).map((subcategoriaItem, index) => (
                 <button
                   key={index}
-                  className={`h-10 rounded-full text-center text-sm ${subCategoriaSeleccionada === subcategoriaItem ? 'bg-orange-600' : 'bg-blue-500'}`}
+                  className={`w-[100%] h-10 rounded-full text-center text-sm ${subCategoriaSeleccionada === subcategoriaItem ? 'bg-orange-600' : 'bg-blue-500'}`}
                   onClick={() => clickSubcategoria(subcategoriaItem)}
                 >
                   <p className='w-24 lg:w-[140px] font-semibold'>{subcategoriaItem}</p>
@@ -139,6 +145,7 @@ export default function Home() {
           </section>
         </>
       )}
+
       <div className={styles.negocios_container}>
         {datos_negocio.map((negocio) => (
           <Slider key={negocio.id} {...settings} className='w-[100%] mb-8 flex justify-center items-center'>
