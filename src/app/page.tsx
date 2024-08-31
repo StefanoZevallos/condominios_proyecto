@@ -16,7 +16,7 @@ export default function Home() {
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("Comida");
   const [subCategoriaSeleccionada, setSubCategoriaSeleccionada] = useState("Todos")
   const [datos_originales_estatico] = useState(datosNegocio.data_negocios);
-  const datos_negocios_home = datos_originales_estatico.filter((dato) => dato.subcategoria === "Todos")
+  const datos_negocios_home = datos_originales_estatico.filter((dato) => dato.categoria === "Comida")
   const [datos_negocio, setDatosNegocio] = useState(datos_negocios_home)
   const [datos_negocioPopUp, setDatosNegocioPopUp] = useState(datos_negocios_home)
   const [showModal, setShowModal] = useState(false);
@@ -135,7 +135,7 @@ export default function Home() {
               (subcategoria[categoriaSeleccionada as keyof typeof subcategoria] || []).map((subcategoriaItem, index) => (
                 <button
                   key={index}
-                  className={`w-[100%] h-10 rounded-full text-center text-sm ${subCategoriaSeleccionada === subcategoriaItem ? 'bg-orange-600' : 'bg-blue-500'}`}
+                  className={`h-10 rounded-full text-center text-sm ${subCategoriaSeleccionada === subcategoriaItem ? 'bg-orange-600' : 'bg-blue-500'}`}
                   onClick={() => clickSubcategoria(subcategoriaItem)}
                 >
                   <p className='w-24 lg:w-[140px] font-semibold'>{subcategoriaItem}</p>
