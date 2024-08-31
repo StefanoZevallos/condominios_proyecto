@@ -5,7 +5,7 @@ import { useState } from 'react';
 import styles from "@/app/styles/nav.module.css";
 import Negocio from "@/app/components/Negocio"
 
-const page = () => {
+const TorrePraderas = () => {
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("Comida");
   return (
     <>
@@ -51,4 +51,4 @@ const page = () => {
   )
 }
 
-export default page
+export default TorrePraderas
