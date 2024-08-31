@@ -29,7 +29,7 @@ export default function Home() {
       "Todos","Alitas", "Pollo a la Brasa", "Hamburguesas", "Snacks", "Marino"]
     ,
     Hogar: [
-       "Todos","Servicios Generales","Decoraciones","Seguridad", "Mudanza"]
+       "Todos","Servicios Generales","Decoracion del Hogar","Seguridad", "Mudanza"]
   }
 
   useEffect(() => {
