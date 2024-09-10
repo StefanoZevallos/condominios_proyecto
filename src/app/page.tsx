@@ -43,8 +43,6 @@ export default function Home() {
     };
   }, [showModal]);
 
-
-
   const funcionFiltrado = (categoria: string) => {
     const datosFiltrados = datos_originales_estatico.filter((dato) => dato.categoria === categoria);
     setDatosNegocio(datosFiltrados)
