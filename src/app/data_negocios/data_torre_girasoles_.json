@@ -1,0 +1,68 @@
+{
+    "data_negocios": [
+          {
+            "id": 1,
+            "categoria": "MiniMarket",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1725928775/torre-las-praderas/wix45qoytf5sghk4yupz.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1725928775/torre-las-praderas/t1nsvrjsg0w5kysbbaoq.jpg"
+            ],
+            "alt": "negocio_minimarket",
+            "telefono":"+51 937 555 473"
+          },
+          {
+            "id": 2,
+            "categoria": "MiniMarket",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1730563995/condominios/torre-los-girasoles/dgdrgll4ij3owuqw2ltq.jpg"
+            ],
+            "alt": "negocio_minimarket",
+            "telefono":"+51 977 176 327"
+          } ,
+          {
+            "id": 3,
+            "categoria": "Comida",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1730563995/condominios/torre-los-girasoles/ibkwtcdd3vgoqfgibomb.jpg"
+            ],
+            "alt": "negocio_comida",
+            "telefono":"+51 961 393 983"
+          },
+          {
+            "id": 4,
+            "categoria": "Eventos",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1730563995/condominios/torre-los-girasoles/ok0osqgqia1ijbg1zgxe.jpg"
+            ],
+            "alt": "alquiler_disfraces",
+            "telefono":"+51 945 936 238"
+          },
+          {
+            "id": 5,
+            "categoria": "Educación",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1730563995/condominios/torre-los-girasoles/ismsx7xfbadovd5nj7l2.jpg"
+            ],
+            "alt": "centro_educativo",
+            "telefono":"+51 921 661 508"
+          },
+          {
+            "id": 6,
+            "categoria": "Comida",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1730563995/condominios/torre-los-girasoles/lo6q0tcqi63psplywdgt.jpg"
+            ],
+            "alt": "negocio_frapes",
+            "telefono":"+51 937 555 473"
+          },
+          {
+            "id": 7,
+            "categoria": "Comida",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1730563995/condominios/torre-los-girasoles/k0vztmqd1uqore3wtnti.jpg"
+            ],
+            "alt": "negocio_tamales",
+            "telefono":"+51 937 555 473"
+          }
+        ]
+        }

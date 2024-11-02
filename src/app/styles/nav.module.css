@@ -2,10 +2,11 @@
 .nav_container {
   background-color: rgb(227, 224, 224);
   height: 160px;
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 15px;
 }
 
 .negocios_container{ 

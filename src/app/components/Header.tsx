@@ -51,6 +51,9 @@ const Header = () => {
             <li className=" hover:bg-gray-200 rounded text-blue-600"  onClick={() => cerrarCondominios()}>
               <Link href="/torre-las-praderas">Condominio Las Praderas</Link>
             </li>
+            <li className=" hover:bg-gray-200 rounded text-blue-600"  onClick={() => cerrarCondominios()}>
+              <Link href="/torre-los-girasoles">Condominio Los Girasoles</Link>
+            </li>
             {/* <li className=" hover:bg-gray-200 rounded text-blue-600">
               <Link href="/condominio3">Condominio Los Girasoles</Link>
             </li>

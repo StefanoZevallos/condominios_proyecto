@@ -10,7 +10,7 @@ import { useState } from 'react';
 import Negocio from "@/app/components/Negocio"
 import datosNegocioTorreGirasoles from "@/app/data_negocios/data_torre_girasoles_.json"
 
-const TorrePraderas = () => {
+const TorreGirasoles = () => {
 
   const settings = {
     dots: true,
@@ -24,7 +24,7 @@ const TorrePraderas = () => {
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("Comida");
   const [datos_originales_estatico] = useState(datosNegocioTorreGirasoles.data_negocios);
   
-  const [datos_negocio_torres_girasoles,setDatosNegocioPraderas] = useState(datos_originales_estatico.filter((dato) => dato.categoria === "Comida"))
+  const [datos_negocio_torres_praderas,setDatosNegocioPraderas] = useState(datos_originales_estatico.filter((dato) => dato.categoria === "Comida"))
 
   const filtradoCategorias = (categoria) => {
     const datosFiltradosCategorias = datos_originales_estatico.filter((dato) => dato.categoria === categoria);
@@ -33,17 +33,18 @@ const TorrePraderas = () => {
     console.log(datos_negocio_torres_praderas);
     
   };
+  
 
   return (
     <>
-      <p className='text-center font-bold p-2'> TORRE LAS PRADERAS</p>
+      <p className='text-center font-bold p-2'> TORRE LOS GIRASOLES</p>
       <Image
-        src={"https://res.cloudinary.com/dqpijrvsq/image/upload/v1725126953/condominios/wizlcolopbq0p2zvhhlx.jpg"}
+        src={"https://res.cloudinary.com/dqpijrvsq/image/upload/v1730565878/condominios/torre-los-girasoles/xdiuf5ighegkjsqbhmqg.jpg"}
         height={"100000"}
         width={"100000"}
         className="h-[250px]"
       />
-      <p className='text-center p-4'>Encuentra los negocios de Torre Las Praderas, como tiendas , servicios del hogar , restaurantes , etc.
+      <p className='text-center p-4'>Encuentra los negocios de Torre Los Girasoles, como tiendas , servicios del hogar , restaurantes , etc.
       </p>
       <p className='font-semibold text-md ml-2 mt-[3px]'> Categorias:</p>
       <section className='ml-2 h-12 mb-2 flex  items-center overflow-x-auto space-x-2 '>
@@ -53,22 +54,29 @@ const TorrePraderas = () => {
         >
           <p className='w-24 lg:w-[140px] font-semibold'> Comida </p>
         </button>
+        
         <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Licores" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Licores")}
+          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "MiniMarket" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          onClick={() => filtradoCategorias("MiniMarket")}
         >
-          <p className='w-24 lg:w-[140px] font-semibold'> Licores </p>
+          <p className='w-24 lg:w-[140px] font-semibold'> Mini-Market </p>
         </button>
         <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Masajes" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Masajes")}
+          className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Eventos" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          onClick={() => filtradoCategorias("Eventos")}
         >
-          <p className='w-24 lg:w-[140px] font-semibold'> Masajes </p>
+          <p className='w-24 lg:w-[140px] font-semibold'> Eventos </p>
+        </button>
+        <button
+          className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Educación" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          onClick={() => filtradoCategorias("Educación")}
+        >
+          <p className='w-24 lg:w-[140px] font-semibold'> Educación </p>
         </button>
       </section>
       
       <div className={styles.negocios_container}>
-      {datos_negocio_torres_girasoles.map((negocio) => (
+      {datos_negocio_torres_praderas.map((negocio) => (
           <Slider key={negocio.id} {...settings} className='w-[100%] mb-8 flex justify-center items-center'>
             {negocio.imagenes_negocio.map((imagen, index) => (
               <div key={index} onClick={() => handleImageClick(negocio.id)}>
@@ -83,4 +91,4 @@ const TorrePraderas = () => {
   )
 }
 
-export default TorrePraderas
+export default TorreGirasoles
