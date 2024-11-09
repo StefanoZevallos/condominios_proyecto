@@ -1,15 +1,6 @@
 {
     "data_negocios": [
-          {
-            "id": 1,
-            "categoria": "MiniMarket",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1725928775/torre-las-praderas/wix45qoytf5sghk4yupz.jpg",
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1725928775/torre-las-praderas/t1nsvrjsg0w5kysbbaoq.jpg"
-            ],
-            "alt": "negocio_minimarket",
-            "telefono":"+51 937 555 473"
-          },
+        
           {
             "id": 2,
             "categoria": "MiniMarket",

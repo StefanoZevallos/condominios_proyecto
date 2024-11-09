@@ -1,0 +1,67 @@
+{
+    "data_negocios": [
+          {
+            "id": 1,
+            "categoria": "MiniMarket",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1731189139/condominios/torres-del-campo/wdpl8nfmfkei8uwaeygj.jpg"
+            ],
+            "alt": "negocio_minimarket",
+            "telefono":"+51 937 555 473"
+          },
+          {
+            "id": 2,
+            "categoria": "Comida",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1731189139/condominios/torres-del-campo/ot5luxulryopjufzgldn.jpg"
+            ],
+            "alt": "negocio_comida_totis",
+            "telefono":"+51 977 176 327"
+          } ,
+          {
+            "id": 3,
+            "categoria": "Servicios Generales",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1731189139/condominios/torres-del-campo/ttf4rovlzmlkcbj9wcbi.jpg"
+            ],
+            "alt": "negocio_servicios_generales",
+            "telefono":"+51 961 393 983"
+          },
+          {
+            "id": 4,
+            "categoria": "Peluqueria",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1731189139/condominios/torres-del-campo/kb8zwdo4cflzow0jdquu.jpg"
+            ],
+            "alt": "negocio_peluqueria",
+            "telefono":"+51 945 936 238"
+          },
+          {
+            "id": 5,
+            "categoria": "Ferreteria",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1731189139/condominios/torres-del-campo/kb8zwdo4cflzow0jdquu.jpg"
+            ],
+            "alt": "Ferreteria",
+            "telefono":"+51 921 661 508"
+          },
+          {
+            "id": 6,
+            "categoria": "Impresiones",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1731189139/condominios/torres-del-campo/iztechyrla1mkntkev0g.jpg"
+            ],
+            "alt": "Impresiones",
+            "telefono":"+51 937 555 473"
+          },
+          {
+            "id": 7,
+            "categoria": "Costura",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1731189139/condominios/torres-del-campo/xu7sd870n5locm6bsoja.jpg"
+            ],
+            "alt": "negocio_costureria",
+            "telefono":"+51 937 555 473"
+          }
+        ]
+        }

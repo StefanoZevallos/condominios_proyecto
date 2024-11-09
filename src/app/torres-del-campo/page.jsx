@@ -8,9 +8,9 @@ import styles from "@/app/styles/nav.module.css";
 import React from 'react'
 import { useState } from 'react';
 import Negocio from "@/app/components/Negocio"
-import datosNegocioTorreGirasoles from "@/app/data_negocios/data_torre_praderas_.json"
+import datosNegocioTorreGirasoles from "@/app/data_negocios/data_torres_del_campo.json"
 
-const TorrePraderas = () => {
+const TorresDelCampo = () => {
 
   const settings = {
     dots: true,
@@ -36,34 +36,52 @@ const TorrePraderas = () => {
 
   return (
     <>
-      <p className='text-center font-bold p-2'> TORRE LAS PRADERAS</p>
+      <p className='text-center font-bold p-2'> TORRES DEL CAMPO</p>
       <Image
-        src={"https://res.cloudinary.com/dqpijrvsq/image/upload/v1725126953/condominios/wizlcolopbq0p2zvhhlx.jpg"}
+        src={"https://res.cloudinary.com/dqpijrvsq/image/upload/v1731187520/condominios/torres-del-campo/q2fsc7m2ufshuxxhi8ej.jpg"}
         height={"100000"}
         width={"100000"}
         className="h-[250px]"
       />
-      <p className='text-center p-4'>Encuentra los negocios de Torre Las Praderas, como tiendas , servicios del hogar , restaurantes , etc.
+      <p className='text-center p-4'>Encuentra los negocios de Torres Del Campo, como tiendas , servicios del hogar , restaurantes , etc.
       </p>
       <p className='font-semibold text-md ml-2 mt-[3px]'> Categorias:</p>
       <section className='ml-2 h-12 mb-2 flex  items-center overflow-x-auto space-x-2 '>
-        <button
+      <button
           className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => filtradoCategorias("Comida")}
         >
-          <p className='w-24 lg:w-[140px] font-semibold'> Comida </p>
+          <p className='w-24 lg:w-[140px] font-semibold'> Comida</p>
         </button>
         <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Licores" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Licores")}
+          className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "MiniMarket" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          onClick={() => filtradoCategorias("MiniMarket")}
         >
-          <p className='w-24 lg:w-[140px] font-semibold'> Licores </p>
+          <p className='w-24 lg:w-[140px] font-semibold'> MiniMarket</p>
         </button>
         <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Masajes" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Masajes")}
+          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Servicios Generales" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          onClick={() => filtradoCategorias("Servicios Generales")}
         >
-          <p className='w-24 lg:w-[140px] font-semibold'> Masajes </p>
+          <p className='w-24 lg:w-[140px] font-semibold'> Servicios Generales </p>
+        </button>
+        <button
+          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Ferreteria" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          onClick={() => filtradoCategorias("Ferreteria")}
+        >
+          <p className='w-24 lg:w-[140px] font-semibold'> Ferreteria </p>
+        </button>
+        <button
+          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Impresiones" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          onClick={() => filtradoCategorias("Impresiones")}
+        >
+          <p className='w-24 lg:w-[140px] font-semibold'> Impresiones </p>
+        </button>
+        <button
+          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Costura" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          onClick={() => filtradoCategorias("Costura")}
+        >
+          <p className='w-24 lg:w-[140px] font-semibold'> Costura </p>
         </button>
       </section>
       
@@ -83,4 +101,4 @@ const TorrePraderas = () => {
   )
 }
 
-export default TorrePraderas
+export default TorresDelCampo
