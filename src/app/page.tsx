@@ -26,10 +26,10 @@ export default function Home() {
 
   const subcategoria = {
     Comida: [
-      "Todos","Alitas", "Pollo a la Brasa", "Hamburguesas", "Snacks", "Marino"]
+      "Alitas", "Pollo a la Brasa", "Hamburguesas", "Snacks", "Marino"]
     ,
     Hogar: [
-       "Todos","Servicios Generales","Decoracion del Hogar","Seguridad", "Mudanza"]
+      "Servicios Generales","Decoracion del Hogar","Seguridad", "Mudanza"]
   }
 
   useEffect(() => {
@@ -91,7 +91,7 @@ export default function Home() {
 
       {/* BOTONES DE CATEGORIAS */}
       <p className='font-semibold text-md ml-2 mt-[3px]'> Categorias:</p>
-      <section className='ml-2 h-12 mb-2 flex  items-center overflow-x-auto space-x-2 '>
+      <section className='ml-2 h-auto mb-2 grid grid-cols-3 gap-2 sm:flex sm:items-center sm:overflow-x-auto sm:space-x-2'>
         <button
           className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => funcionFiltrado("Comida")}
@@ -127,7 +127,7 @@ export default function Home() {
       {Object.keys(subcategoria).includes(categoriaSeleccionada) && (subcategoria[categoriaSeleccionada as keyof typeof subcategoria] || []).length > 0 && (
         <>
           <p className='font-semibold text-sm ml-2 mt-[3px]'>Subcategorías:</p>
-          <section className='ml-2 h-12 mb-2 flex items-center overflow-x-auto space-x-2'>
+          <section className='ml-2 h-auto mb-2 grid grid-cols-3 gap-2 sm:flex sm:items-center sm:overflow-x-auto sm:space-x-2'>
             {
               (subcategoria[categoriaSeleccionada as keyof typeof subcategoria] || []).map((subcategoriaItem, index) => (
                 <button

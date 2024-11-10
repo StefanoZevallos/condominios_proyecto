@@ -30,8 +30,6 @@ const TorrePraderas = () => {
     const datosFiltradosCategorias = datos_originales_estatico.filter((dato) => dato.categoria === categoria);
     setDatosNegocioPraderas(datosFiltradosCategorias)
     setCategoriaSeleccionada(categoria);
-    console.log(datos_negocio_torres_praderas);
-    
   };
 
   return (

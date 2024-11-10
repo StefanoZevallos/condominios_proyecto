@@ -23,15 +23,14 @@ const TorresDelCampo = () => {
 
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("Comida");
   const [datos_originales_estatico] = useState(datosNegocioTorreGirasoles.data_negocios);
-  
-  const [datos_negocio_torres_girasoles,setDatosNegocioPraderas] = useState(datos_originales_estatico.filter((dato) => dato.categoria === "Comida"))
+
+  const [datos_negocio_torres_girasoles, setDatosNegocioPraderas] = useState(datos_originales_estatico.filter((dato) => dato.categoria === "Comida"))
 
   const filtradoCategorias = (categoria) => {
     const datosFiltradosCategorias = datos_originales_estatico.filter((dato) => dato.categoria === categoria);
     setDatosNegocioPraderas(datosFiltradosCategorias)
     setCategoriaSeleccionada(categoria);
-    console.log(datos_negocio_torres_praderas);
-    
+
   };
 
   return (
@@ -45,48 +44,47 @@ const TorresDelCampo = () => {
       />
       <p className='text-center p-4'>Encuentra los negocios de Torres Del Campo, como tiendas , servicios del hogar , restaurantes , etc.
       </p>
-      <p className='font-semibold text-md ml-2 mt-[3px]'> Categorias:</p>
-      <section className='ml-2 h-12 mb-2 flex  items-center overflow-x-auto space-x-2 '>
-      <button
-          className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
+      <section className='ml-2 h-auto mb-2 grid grid-cols-3 gap-2 sm:flex sm:items-center sm:overflow-x-auto sm:space-x-2'>
+        <button
+          className={`h-10 rounded-full text-center ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => filtradoCategorias("Comida")}
         >
-          <p className='w-24 lg:w-[140px] font-semibold'> Comida</p>
+          <p className='w-full font-semibold'>Comida</p>
         </button>
         <button
-          className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "MiniMarket" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          className={`h-10 rounded-full text-center ${categoriaSeleccionada === "MiniMarket" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => filtradoCategorias("MiniMarket")}
         >
-          <p className='w-24 lg:w-[140px] font-semibold'> MiniMarket</p>
+          <p className='w-full font-semibold'>MiniMarket</p>
         </button>
         <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Servicios Generales" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          className={`h-10 rounded-full text-center ${categoriaSeleccionada === "Servicios Generales" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => filtradoCategorias("Servicios Generales")}
         >
-          <p className='w-24 lg:w-[140px] font-semibold'> Servicios Generales </p>
+          <p className='w-full font-semibold'>Servicios Generales</p>
         </button>
         <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Ferreteria" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          className={`h-10 rounded-full text-center ${categoriaSeleccionada === "Ferreteria" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => filtradoCategorias("Ferreteria")}
         >
-          <p className='w-24 lg:w-[140px] font-semibold'> Ferreteria </p>
+          <p className='w-full font-semibold'>Ferreteria</p>
         </button>
         <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Impresiones" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          className={`h-10 rounded-full text-center ${categoriaSeleccionada === "Impresiones" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => filtradoCategorias("Impresiones")}
         >
-          <p className='w-24 lg:w-[140px] font-semibold'> Impresiones </p>
+          <p className='w-full font-semibold'>Impresiones</p>
         </button>
         <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Costura" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          className={`h-10 rounded-full text-center ${categoriaSeleccionada === "Costura" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => filtradoCategorias("Costura")}
         >
-          <p className='w-24 lg:w-[140px] font-semibold'> Costura </p>
+          <p className='w-full font-semibold'>Costura</p>
         </button>
       </section>
-      
+
       <div className={styles.negocios_container}>
-      {datos_negocio_torres_girasoles.map((negocio) => (
+        {datos_negocio_torres_girasoles.map((negocio) => (
           <Slider key={negocio.id} {...settings} className='w-[100%] mb-8 flex justify-center items-center'>
             {negocio.imagenes_negocio.map((imagen, index) => (
               <div key={index} onClick={() => handleImageClick(negocio.id)}>
@@ -95,7 +93,7 @@ const TorresDelCampo = () => {
             ))}
           </Slider>
         ))}
-        </div>
+      </div>
 
     </>
   )

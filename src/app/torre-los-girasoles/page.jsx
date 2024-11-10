@@ -30,7 +30,6 @@ const TorreGirasoles = () => {
     const datosFiltradosCategorias = datos_originales_estatico.filter((dato) => dato.categoria === categoria);
     setDatosNegocioPraderas(datosFiltradosCategorias)
     setCategoriaSeleccionada(categoria);
-    console.log(datos_negocio_torres_praderas);
     
   };
   
@@ -47,7 +46,7 @@ const TorreGirasoles = () => {
       <p className='text-center p-4'>Encuentra los negocios de Torre Los Girasoles, como tiendas , servicios del hogar , restaurantes , etc.
       </p>
       <p className='font-semibold text-md ml-2 mt-[3px]'> Categorias:</p>
-      <section className='ml-2 h-12 mb-2 flex  items-center overflow-x-auto space-x-2 '>
+      <section className='ml-2 h-auto mb-2 grid grid-cols-3 gap-2 sm:flex sm:items-center sm:overflow-x-auto sm:space-x-2'>
         <button
           className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => filtradoCategorias("Comida")}
