@@ -26,13 +26,15 @@ const Header = () => {
               Micaela 
             </p>
             </div>
+
             <Image
-                className="ml-1 cursor-pointer inline-block"
-                src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1724725626/condominios/tfxqsthsnlkacmdip64g.webp"
+                className="ml-4 cursor-pointer inline-block"
+                src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1744924105/condominios/logo/eplzbcuyazcm92rbtbcz.jpg"
                 alt="Descripción de la imagen"
-                width={40}
-                height={10}
+                width={50}
+                height={50}
               />
+
           </Link>
 
 
