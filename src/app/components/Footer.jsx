@@ -5,7 +5,7 @@ const Footer = () => {
         <>
             <div className="bg-red-500 w-full flex flex-col  py-5 h-4/5">
                 <div className='flex flex-col justify-center align-center text-center'>
-                    <p className='text-xs my-2 text-white'> Contacto: +51 926 802 518</p>
+                    <p className='text-xs my-2 text-white'> Contacto: +51 919 474 616 </p>
                 </div>
             </div>
 

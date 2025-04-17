@@ -10,6 +10,7 @@ import { useState, useEffect } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import 'react-medium-image-zoom/dist/styles.css';
+import Image from 'next/image';
 
 export default function Home() {
 
@@ -29,7 +30,7 @@ export default function Home() {
       "Alitas", "Pollo a la Brasa", "Hamburguesas", "Snacks", "Marino"]
     ,
     Hogar: [
-      "Servicios Generales","Decoracion del Hogar","Seguridad", "Mudanza"]
+      "Servicios Generales", "Decoracion del Hogar", "Seguridad", "Mudanza"]
   }
 
   useEffect(() => {
@@ -81,117 +82,43 @@ export default function Home() {
   return (
     <>
       <article className={styles.nav_container}>
-        <div className='h-[20%] mt-[10px] '>
-          <p className='p-2 text-center'> Reunimos todos los negocios de la zona Micaela en Comas.
-            Como Delivery de comida, Envio de Gas, Reparaciones del Hogar, Instalaciones Electricas , Melamines, etc.
+        <div className='h-[50%] mt-[10px] '>
+          <p className='p-2 text-center'> Reunimos todos los negocios de tu Condominio.
+            Como Delivery de comida , tiendas , servicios personales , alquieres , etc.
           </p>
+          <p className='text-center font-bold p-2'> TORRES LAS PRADERAS </p>
+          <Image
+            src={"https://res.cloudinary.com/dqpijrvsq/image/upload/v1725126953/condominios/wizlcolopbq0p2zvhhlx.jpg"}
+            height={"100000"}
+            width={"100000"}
+            className="h-[350px] p-2 border-x rounded-xs"
+          />
         </div>
-
       </article>
-
-      {/* BOTONES DE CATEGORIAS */}
-      <p className='font-semibold text-md ml-2 mt-[3px]'> Categorias:</p>
-      <section className='ml-2 h-auto mb-2 grid grid-cols-3 gap-2 sm:flex sm:items-center sm:overflow-x-auto sm:space-x-2'>
-        <button
-          className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => funcionFiltrado("Comida")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Comida </p>
-        </button>
-        <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Gas" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => funcionFiltrado("Gas")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Gas </p>
-        </button>
-        <button
-          className={`h-10 rounded-full text-center ${categoriaSeleccionada === "Hogar" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => funcionFiltrado("Hogar")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Hogar </p>
-        </button>
-        <button
-          className={`h-10 rounded-full text-center ${categoriaSeleccionada === "Agua" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => funcionFiltrado("Agua")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Agua </p>
-        </button>
-        <button
-          className={`h-10 rounded-full text-center ${categoriaSeleccionada === "Otros" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => funcionFiltrado("Otros")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Otros </p>
-        </button>
-      </section>
-      {/* subcategorias botones */}
-      {Object.keys(subcategoria).includes(categoriaSeleccionada) && (subcategoria[categoriaSeleccionada as keyof typeof subcategoria] || []).length > 0 && (
-        <>
-          <p className='font-semibold text-sm ml-2 mt-[3px]'>Subcategorías:</p>
-          <section className='ml-2 h-auto mb-2 grid grid-cols-3 gap-2 sm:flex sm:items-center sm:overflow-x-auto sm:space-x-2'>
-            {
-              (subcategoria[categoriaSeleccionada as keyof typeof subcategoria] || []).map((subcategoriaItem, index) => (
-                <button
-                  key={index}
-                  className={`h-10 rounded-full text-center text-sm ${subCategoriaSeleccionada === subcategoriaItem ? 'bg-orange-600' : 'bg-blue-500'}`}
-                  onClick={() => clickSubcategoria(subcategoriaItem)}
-                >
-                  <p className='w-24 lg:w-[140px] font-semibold'>{subcategoriaItem}</p>
-                </button>
-              ))
-            }
-          </section>
-        </>
-      )}
-
-      <div className={styles.negocios_container}>
-        {datos_negocio.map((negocio) => (
-          <Slider key={negocio.id} {...settings} className='w-[100%] mb-8 flex justify-center items-center'>
-            {negocio.imagenes_negocio.map((imagen, index) => (
-              <div key={index} onClick={() => handleImageClick(negocio.id)}>
-                <Negocio key={index} alt={negocio.alt} foto_negocio_url={imagen} />
-              </div>
-            ))}
-          </Slider>
-        ))}
-        {/* MODAL */}
-        {showModal && (
-          <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center">
-            {/* modal real */}
-            <div className="bg-white rounded-lg w-full max-w-screen-md h-[98%] flex flex-col overflow-hidden">
-              <div className='flex justify-end p-2'>
-                <button
-                  onClick={closeModal}
-                  className="text-[25px] font-bold text-red-500 rounded-full w-[35px] h-[35px]  flex items-center justify-center bg-gray-200 hover:bg-gray-300"
-                >
-                  X
-                </button>
-              </div>
-              <div >
-                {datos_negocioPopUp.map((negocio) => (
-                  <Slider key={negocio.id} {...settings} className="w-full mb-8 flex justify-center items-center">
-                    {negocio.imagenes_negocio.map((imagen, index) => (
-                      <div key={index}>
-                        <Negocio alt={negocio.alt} foto_negocio_url={imagen} />
-                      </div>
-                    ))}
-                  </Slider>
-                ))}
-              </div>
-              <div className="h-[100%] flex justify-center items-center font-bold">
-                {datos_negocioPopUp.map((negocio) => (
-                  <a key={negocio.id} href={`https://wa.me/${negocio.telefono}?text=Hola Estoy interesado en ...`} target="_blank" rel="noopener noreferrer">
-                    <button className="bg-green-500 text-white  rounded-lg w-[120px] h-[45px] ">
-                      WhatsApp
-                    </button>
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
-      </div>
-
-
+      <div className="flex justify-center my-4">
+  <button className="bg-yellow-500 hover:bg-green-600 text-white font-semibold text-sm py-2 px-4 rounded-full shadow-md transition duration-300 ease-in-out">
+    PÍDELO AQUÍ
+  </button>
+</div>
+      <article className="flex gap-4 p-4 justify-center">
+        <div className="flex-1 bg-cyan-100 p-6 rounded-xl text-center">
+          Caja 1
+        </div>
+        <div className="flex-1 bg-orange-100 p-6 rounded-xl text-center">
+          Caja 2
+        </div>
+        <div className="flex-1 bg-green-100 p-6 rounded-xl text-center">
+          Caja 3
+        </div>
+        <div className="flex-1 bg-purple-100 p-6 rounded-xl text-center">
+          Caja 4
+        </div>
+      </article>
+      <div className="flex justify-center my-4">
+  <button className="bg-yellow-500 hover:bg-green-600 text-white font-semibold text-sm py-2 px-4 rounded-full shadow-md transition duration-300 ease-in-out">
+    PÍDELO AQUÍ
+  </button>
+</div>
     </>
   )
 }
