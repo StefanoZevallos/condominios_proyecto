@@ -88,7 +88,7 @@ export default function Home() {
           </p>
           <p className='text-center font-bold p-2'> TORRES LAS PRADERAS </p>
           <Image
-          alt='imagen-condominio'
+          alt='imagen-codominio'
             src={"https://res.cloudinary.com/dqpijrvsq/image/upload/v1725126953/condominios/wizlcolopbq0p2zvhhlx.jpg"}
             height={"100000"}
             width={"100000"}
@@ -111,9 +111,7 @@ export default function Home() {
         <div className="flex-1 bg-green-100 p-6 rounded-xl text-center">
           Caja 3
         </div>
-        <div className="flex-1 bg-purple-100 p-6 rounded-xl text-center">
-          Caja 4
-        </div>
+        
       </article>
       <div className="flex justify-center my-4">
   <button className="bg-yellow-500 hover:bg-green-600 text-white font-semibold text-sm py-2 px-4 rounded-full shadow-md transition duration-300 ease-in-out">

@@ -35,7 +35,7 @@ const TorresDelCampo = () => {
 
   return (
     <>
-      <p className='text-center font-bold p-2'> TORRES DEL CAMPO</p>
+      <p className='text-center font-bold '> TORRES DEL CAMPO</p>
       <Image
         src={"https://res.cloudinary.com/dqpijrvsq/image/upload/v1731187520/condominios/torres-del-campo/q2fsc7m2ufshuxxhi8ej.jpg"}
         height={"100000"}
