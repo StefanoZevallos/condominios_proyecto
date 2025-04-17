@@ -88,6 +88,7 @@ export default function Home() {
           </p>
           <p className='text-center font-bold p-2'> TORRES LAS PRADERAS </p>
           <Image
+          alt='imagen-condominio'
             src={"https://res.cloudinary.com/dqpijrvsq/image/upload/v1725126953/condominios/wizlcolopbq0p2zvhhlx.jpg"}
             height={"100000"}
             width={"100000"}
